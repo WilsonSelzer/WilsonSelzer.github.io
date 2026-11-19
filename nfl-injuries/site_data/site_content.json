@@ -1,613 +1,295 @@
 {
   "findings": [
     {
-      "id": "stable-predictability",
-      "title": "The model's modest signal stayed remarkably stable",
-      "summary": "Three-year models stayed near 0.60 AUC; none of the named era changes had non-overlapping confidence intervals.",
-      "who_should_act": "Anyone deploying an injury-risk model",
-      "notable_contrast": "Unlike the LA crash model's post-COVID shift, NFL play-level predictability did not clearly break after 2018, 2020, or 2024.",
-      "chart_type": "auc",
-      "data": [
+      "id": "kickoff",
+      "title": "Kickoff injuries are far more often head injuries",
+      "summary": "About 40% of serious kickoff injuries involved the head, versus 15% on other plays.",
+      "key_numbers": [
         {
-          "test_year": 2012,
-          "roc_auc": 0.5838153928108769,
-          "roc_auc_ci_low": 0.5597938880676934,
-          "roc_auc_ci_high": 0.6064412530941582
+          "value": "~40%",
+          "label": "Kickoff injuries to the head"
         },
         {
-          "test_year": 2013,
-          "roc_auc": 0.5612582790876022,
-          "roc_auc_ci_low": 0.5387172785987648,
-          "roc_auc_ci_high": 0.5832160899644259
-        },
-        {
-          "test_year": 2014,
-          "roc_auc": 0.5840872306909788,
-          "roc_auc_ci_low": 0.5649157423064527,
-          "roc_auc_ci_high": 0.6058195032653549
-        },
-        {
-          "test_year": 2015,
-          "roc_auc": 0.5841701741629092,
-          "roc_auc_ci_low": 0.5653969953211394,
-          "roc_auc_ci_high": 0.6054279511167916
-        },
-        {
-          "test_year": 2016,
-          "roc_auc": 0.5991292618504489,
-          "roc_auc_ci_low": 0.5817136118455601,
-          "roc_auc_ci_high": 0.6222466209313152
-        },
-        {
-          "test_year": 2017,
-          "roc_auc": 0.5964986768444934,
-          "roc_auc_ci_low": 0.5800215790434091,
-          "roc_auc_ci_high": 0.6147397362112935
-        },
-        {
-          "test_year": 2018,
-          "roc_auc": 0.600789050058852,
-          "roc_auc_ci_low": 0.5792729371494841,
-          "roc_auc_ci_high": 0.6203704207920793
-        },
-        {
-          "test_year": 2019,
-          "roc_auc": 0.6138361245597003,
-          "roc_auc_ci_low": 0.5978245920909573,
-          "roc_auc_ci_high": 0.6306221376358095
-        },
-        {
-          "test_year": 2020,
-          "roc_auc": 0.6155683629624676,
-          "roc_auc_ci_low": 0.5957145127999467,
-          "roc_auc_ci_high": 0.6295613633781254
-        },
-        {
-          "test_year": 2021,
-          "roc_auc": 0.595330974245878,
-          "roc_auc_ci_low": 0.5769550199251494,
-          "roc_auc_ci_high": 0.6107047408937841
-        },
-        {
-          "test_year": 2022,
-          "roc_auc": 0.6049490276233045,
-          "roc_auc_ci_low": 0.5894731579142322,
-          "roc_auc_ci_high": 0.6239744374452816
-        },
-        {
-          "test_year": 2023,
-          "roc_auc": 0.6057418965549985,
-          "roc_auc_ci_low": 0.5929423176298952,
-          "roc_auc_ci_high": 0.6231008016460675
-        },
-        {
-          "test_year": 2024,
-          "roc_auc": 0.6095177777248484,
-          "roc_auc_ci_low": 0.5932438738773493,
-          "roc_auc_ci_high": 0.6262055032328094
-        },
-        {
-          "test_year": 2025,
-          "roc_auc": 0.5925425302768567,
-          "roc_auc_ci_low": 0.5744012788971042,
-          "roc_auc_ci_high": 0.6083035103118913
+          "value": "15%",
+          "label": "Same share on other plays"
         }
-      ]
-    },
-    {
-      "id": "kickoff-head",
-      "title": "Kickoff injuries were disproportionately head injuries",
-      "summary": "The pattern appeared in both pre-registered replication periods.",
+      ],
+      "notable_contrast": "The 2025 kickoff rule raised live returns from 33% to 74% of kickoffs, so more players are exposed to that contact.",
       "who_should_act": "NFL competition committee",
-      "notable_contrast": "Kickoff injury events were roughly 2.5-2.9 times as likely to involve the head as injuries on the other listed play types.",
-      "chart_type": "comparison",
       "data": [
         {
           "period": "2016-2021",
-          "group_a": "kickoff",
-          "events_a": 24,
-          "exposure_a": 56.0,
-          "rate_a": 0.4285714285714285,
-          "group_b": "Other listed play types",
-          "events_b": 208,
-          "exposure_b": 1384.0,
-          "rate_b": 0.1502890173410404,
-          "rate_ratio": 2.8516483516483517,
-          "adjusted_p_value": 8.48493060041434e-09
+          "Kickoffs": 0.429,
+          "Other plays": 0.15
         },
         {
           "period": "2022-2025",
-          "group_a": "kickoff",
-          "events_a": 15,
-          "exposure_a": 39.0,
-          "rate_a": 0.3846153846153846,
-          "group_b": "Other listed play types",
-          "events_b": 162,
-          "exposure_b": 1069.0,
-          "rate_b": 0.1515434985968194,
-          "rate_ratio": 2.537986704653372,
-          "adjusted_p_value": 0.0001398839784923
+          "Kickoffs": 0.385,
+          "Other plays": 0.152
         }
-      ]
+      ],
+      "spec": {
+        "type": "bar",
+        "x_key": "period",
+        "y_keys": [
+          "Kickoffs",
+          "Other plays"
+        ],
+        "title": "Share of serious injuries that were head injuries",
+        "percent": true
+      }
     },
     {
-      "id": "reinury",
-      "title": "An earlier injury in the same season predicted another major injury",
-      "summary": "The per-snap rate was higher after a player had already appeared in the injury data that season.",
-      "who_should_act": "Team medical and workload staffs",
-      "notable_contrast": "The rate ratio strengthened from 1.30 in 2016-2021 to 1.52 in 2022-2025.",
-      "chart_type": "comparison",
+      "id": "reinjury",
+      "title": "One injury makes another more likely",
+      "summary": "Players already hurt earlier that season were injured again at a higher rate per snap.",
+      "key_numbers": [
+        {
+          "value": "1.3\u00d7",
+          "label": "Re-injury rate, 2016 to 2021"
+        },
+        {
+          "value": "1.5\u00d7",
+          "label": "Re-injury rate, 2022 to 2025"
+        }
+      ],
+      "notable_contrast": "The gap grew in recent seasons.",
+      "who_should_act": "Team medical and workload staff",
       "data": [
         {
           "period": "2016-2021",
-          "group_a": "After prior injury",
-          "events_a": 238,
-          "exposure_a": 926933.0,
-          "rate_a": 0.0002567607367522,
-          "group_b": "No prior injury",
-          "events_b": 951,
-          "exposure_b": 4825053.0,
-          "rate_b": 0.0001970962806004,
-          "rate_ratio": 1.3027173114077737,
-          "adjusted_p_value": 0.0019334944335104
+          "After prior injury": 2.6,
+          "No prior injury": 2.0
         },
         {
           "period": "2022-2025",
-          "group_a": "After prior injury",
-          "events_a": 228,
-          "exposure_a": 737324.0,
-          "rate_a": 0.0003092263374039,
-          "group_b": "No prior injury",
-          "events_b": 650,
-          "exposure_b": 3205169.0,
-          "rate_b": 0.0002027974187944,
-          "rate_ratio": 1.5248041086623856,
-          "adjusted_p_value": 6.473346975365989e-07
+          "After prior injury": 3.1,
+          "No prior injury": 2.0
         }
-      ]
+      ],
+      "spec": {
+        "type": "bar",
+        "x_key": "period",
+        "y_keys": [
+          "After prior injury",
+          "No prior injury"
+        ],
+        "title": "Injuries per 10,000 snaps",
+        "percent": false
+      }
     },
     {
       "id": "run-ankle",
-      "title": "Run-play injuries skewed toward ankles",
-      "summary": "Ankle injuries made up a larger share of run injuries in both periods.",
-      "who_should_act": "Coaches and equipment staffs",
-      "notable_contrast": "The ankle share was about 1.6 times the share on other listed play types.",
-      "chart_type": "comparison",
+      "title": "Run plays are hard on ankles",
+      "summary": "Ankles made up a bigger share of injuries on runs than on any other play type.",
+      "key_numbers": [
+        {
+          "value": "1.6\u00d7",
+          "label": "Ankle share vs other plays"
+        }
+      ],
+      "who_should_act": "Coaches and equipment staff",
       "data": [
         {
           "period": "2016-2021",
-          "group_a": "run",
-          "events_a": 172,
-          "exposure_a": 594.0,
-          "rate_a": 0.2895622895622896,
-          "group_b": "Other listed play types",
-          "events_b": 155,
-          "exposure_b": 846.0,
-          "rate_b": 0.1832151300236406,
-          "rate_ratio": 1.5804496578690128,
-          "adjusted_p_value": 2.8343554354758782e-05
+          "Run plays": 0.29,
+          "Other plays": 0.183
         },
         {
           "period": "2022-2025",
-          "group_a": "run",
-          "events_a": 117,
-          "exposure_a": 446.0,
-          "rate_a": 0.2623318385650224,
-          "group_b": "Other listed play types",
-          "events_b": 112,
-          "exposure_b": 662.0,
-          "rate_b": 0.1691842900302115,
-          "rate_ratio": 1.5505685458039715,
-          "adjusted_p_value": 0.0014310938545729
+          "Run plays": 0.262,
+          "Other plays": 0.169
         }
-      ]
+      ],
+      "spec": {
+        "type": "bar",
+        "x_key": "period",
+        "y_keys": [
+          "Run plays",
+          "Other plays"
+        ],
+        "title": "Share of injuries that were ankles",
+        "percent": true
+      }
     },
     {
-      "id": "ol-major",
-      "title": "Offensive-line injuries were more often major",
-      "summary": "The result remained after grouping inconsistent historical position labels.",
-      "who_should_act": "Team medical staffs and offensive-line coaches",
-      "notable_contrast": "About 35-37% of OL injuries were major versus 23-24% at other positions.",
-      "chart_type": "comparison",
+      "id": "ol",
+      "title": "Offensive linemen get hurt worse",
+      "summary": "When linemen are injured, it is more often serious.",
+      "key_numbers": [
+        {
+          "value": "35 to 37%",
+          "label": "OL injuries that are serious"
+        },
+        {
+          "value": "23 to 24%",
+          "label": "Every other position"
+        }
+      ],
+      "who_should_act": "Team medical staff and line coaches",
       "data": [
         {
           "period": "2016-2021",
-          "group_a": "OL",
-          "events_a": 266,
-          "exposure_a": 719.0,
-          "rate_a": 0.3699582753824756,
-          "group_b": "Other positions",
-          "events_b": 923,
-          "exposure_b": 3802.0,
-          "rate_b": 0.2427669647553919,
-          "rate_ratio": 1.523923470210371,
-          "adjusted_p_value": 2.918948100260501e-12
+          "Other positions": 0.243,
+          "Offensive line": 0.37
         },
         {
           "period": "2022-2025",
-          "group_a": "OL",
-          "events_a": 187,
-          "exposure_a": 534.0,
-          "rate_a": 0.350187265917603,
-          "group_b": "Other positions",
-          "events_b": 691,
-          "exposure_b": 2992.0,
-          "rate_b": 0.2309491978609625,
-          "rate_ratio": 1.516295657923977,
-          "adjusted_p_value": 1.6821454254619e-08
+          "Other positions": 0.231,
+          "Offensive line": 0.35
         }
-      ]
-    },
-    {
-      "id": "age-30",
-      "title": "Players 30 and older had fewer recorded injuries per snap",
-      "summary": "The older group had a lower overall injury rate in both periods.",
-      "who_should_act": "Roster planners and sports-science staffs",
-      "notable_contrast": "The rate ratio was 0.87-0.88, but this does not prove age is protective because playing roles differ.",
-      "chart_type": "comparison",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Age 30+",
-          "events_a": 677,
-          "exposure_a": 883871.0,
-          "rate_a": 0.0007659488771551,
-          "group_b": "Under 26",
-          "events_b": 2249,
-          "exposure_b": 2550987.0,
-          "rate_b": 0.0008816195456895,
-          "rate_ratio": 0.868797522582208,
-          "adjusted_p_value": 0.0072466362207934
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Age 30+",
-          "events_a": 537,
-          "exposure_a": 606366.0,
-          "rate_a": 0.0008856037442732,
-          "group_b": "Under 26",
-          "events_b": 1643,
-          "exposure_b": 1633617.0,
-          "rate_b": 0.0010057436963498,
-          "rate_ratio": 0.8805461545395321,
-          "adjusted_p_value": 0.0426480974646989
-        }
-      ]
+      ],
+      "spec": {
+        "type": "bar",
+        "x_key": "period",
+        "y_keys": [
+          "Offensive line",
+          "Other positions"
+        ],
+        "title": "Share of injuries that were serious",
+        "percent": true
+      }
     },
     {
       "id": "special-teams",
-      "title": "Special teams had fewer major injuries per play than run/pass plays",
-      "summary": "Correcting the punt parser increased the counts but did not reverse the result.",
-      "who_should_act": "NFL competition committee and special-teams coordinators",
-      "notable_contrast": "Special-teams rates were 0.55-0.66 times the run/pass rate.",
-      "chart_type": "comparison",
+      "title": "Special teams is safer per play than offense",
+      "summary": "Even after fixing a parsing bug that undercounted punts, special teams had fewer serious injuries per play.",
+      "key_numbers": [
+        {
+          "value": "35 to 45%",
+          "label": "Fewer serious injuries per play"
+        }
+      ],
+      "who_should_act": "Special teams coordinators",
       "data": [
         {
           "period": "2016-2021",
-          "group_a": "Special teams",
-          "events_a": 149,
-          "exposure_a": 44320.0,
-          "rate_a": 0.0033619133574007,
-          "group_b": "Run/pass",
-          "events_b": 1032,
-          "exposure_b": 204108.0,
-          "rate_b": 0.0050561467458404,
-          "rate_ratio": 0.6649160964654521,
-          "adjusted_p_value": 3.478015991734168e-05
+          "Special teams": 3.4,
+          "Run/pass": 5.1
         },
         {
           "period": "2022-2025",
-          "group_a": "Special teams",
-          "events_a": 92,
-          "exposure_a": 30009.0,
-          "rate_a": 0.0030657469425838,
-          "group_b": "Run/pass",
-          "events_b": 781,
-          "exposure_b": 140712.0,
-          "rate_b": 0.0055503439649781,
-          "rate_ratio": 0.5523526040779315,
-          "adjusted_p_value": 9.706903260980194e-07
+          "Special teams": 3.1,
+          "Run/pass": 5.6
         }
-      ]
+      ],
+      "spec": {
+        "type": "bar",
+        "x_key": "period",
+        "y_keys": [
+          "Special teams",
+          "Run/pass"
+        ],
+        "title": "Serious injuries per 1,000 plays",
+        "percent": false
+      }
     },
     {
-      "id": "kickoff-rules",
-      "title": "The new kickoff produced far more live returns in 2025",
-      "summary": "Return share jumped sharply from 2024, changing how many kickoffs exposed players to live contact.",
-      "who_should_act": "NFL competition committee",
-      "notable_contrast": "Return share rose from 33.4% in 2024 to 74.2% in 2025.",
-      "chart_type": "comparison",
-      "data": [
+      "id": "model",
+      "title": "The model is modest, and steady",
+      "summary": "It ranks risky situations better than chance, at about the same level every season since 2012.",
+      "key_numbers": [
         {
-          "period": "2025 vs 2024",
-          "group_a": "2025",
-          "events_a": 2173,
-          "exposure_a": 2927.0,
-          "rate_a": 0.7423983600956611,
-          "group_b": "2024",
-          "events_b": 986,
-          "exposure_b": 2955.0,
-          "rate_b": 0.3336717428087986,
-          "rate_ratio": 2.2249362617471387,
-          "adjusted_p_value": 6.897059091318484e-175
-        }
-      ]
-    },
-    {
-      "id": "weight-story",
-      "title": "Late-game context persisted while kickoff weight faded",
-      "summary": "Balanced-window coefficients describe model associations, not calibrated probabilities.",
-      "who_should_act": "Analysts monitoring rule and strategy changes",
-      "notable_contrast": "Fourth-quarter weight finished above its first-window value; kickoff weight fell by more than half by 2025.",
-      "chart_type": "weights",
-      "data": [
-        {
-          "feature": "Fourth quarter",
-          "first_year": 2012,
-          "first_weight": 0.0813349753011337,
-          "last_year": 2025,
-          "last_weight": 0.092921617637535
+          "value": "0.60",
+          "label": "Ranking score (0.5 = coin flip)"
         },
         {
-          "feature": "Kickoff",
-          "first_year": 2012,
-          "first_weight": 0.1444807269336639,
-          "last_year": 2025,
-          "last_weight": 0.0705782854703024
+          "value": "2\u00d7",
+          "label": "Drop in kickoff weight by 2025"
         }
-      ]
+      ],
+      "notable_contrast": "Rule changes in 2018, 2020 and 2024 never clearly broke it. Late-game plays stayed a risk signal while kickoffs faded after the rule change.",
+      "who_should_act": "Anyone building an injury-risk model",
+      "data": [
+        {
+          "season": 2012,
+          "Ranking score": 0.584
+        },
+        {
+          "season": 2013,
+          "Ranking score": 0.561
+        },
+        {
+          "season": 2014,
+          "Ranking score": 0.584
+        },
+        {
+          "season": 2015,
+          "Ranking score": 0.584
+        },
+        {
+          "season": 2016,
+          "Ranking score": 0.599
+        },
+        {
+          "season": 2017,
+          "Ranking score": 0.596
+        },
+        {
+          "season": 2018,
+          "Ranking score": 0.601
+        },
+        {
+          "season": 2019,
+          "Ranking score": 0.614
+        },
+        {
+          "season": 2020,
+          "Ranking score": 0.616
+        },
+        {
+          "season": 2021,
+          "Ranking score": 0.595
+        },
+        {
+          "season": 2022,
+          "Ranking score": 0.605
+        },
+        {
+          "season": 2023,
+          "Ranking score": 0.606
+        },
+        {
+          "season": 2024,
+          "Ranking score": 0.61
+        },
+        {
+          "season": 2025,
+          "Ranking score": 0.593
+        }
+      ],
+      "spec": {
+        "x_key": "season",
+        "y_keys": [
+          "Ranking score"
+        ],
+        "title": "Ranking score by test season (0.5 = coin flip)",
+        "domain": [
+          0.5,
+          0.7
+        ]
+      }
     }
   ],
   "data_quality_findings": [
-    {
-      "title": "IR placements repaired a serious-injury blind spot",
-      "detail": "Players can disappear from weekly injury reports after moving to injured reserve.",
-      "value": 795,
-      "unit": "2016-2025 major injuries identified through inactive-injury status without Out/Doubtful"
-    },
-    {
-      "title": "The return label drifted in 2024",
-      "detail": "Description wording changed, so apparent game-ending injuries changed with the feed rather than football.",
-      "values": {
-        "2023": 0.5871657754010695,
-        "2024": 0.41798298906439857
-      }
-    },
-    {
-      "title": "Offensive linemen are less visible in play descriptions",
-      "detail": "The old returned-later rule depended on a player being named again.",
-      "values": {
-        "offensive_line": 0.16905660377358492,
-        "other_positions": 0.46561829878484634
-      }
-    },
-    {
-      "title": "The word Center fooled the first punt parser",
-      "detail": "A missing text boundary parsed the end of Center as a team abbreviation.",
-      "value": 519,
-      "unit": "false player matches corrected"
-    },
-    {
-      "title": "Public play descriptions miss many reported concussions",
-      "detail": "The project captured only part of the NFL's reported 2025 kickoff-concussion total.",
-      "values": {
-        "captured": 5,
-        "nfl_reported": 35
-      }
-    }
-  ],
-  "what_didnt_show_up": [
-    {
-      "label": "Thursday games",
-      "comparison": "Thursday vs Sunday major-injury rate per play",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Thursday",
-          "events_a": 79,
-          "exposure_a": 15572.0,
-          "rate_a": 0.0050732083226303,
-          "group_b": "Sunday",
-          "events_b": 981,
-          "exposure_b": 209145.0,
-          "rate_b": 0.0046905257118267,
-          "rate_ratio": 1.081586294226837,
-          "adjusted_p_value": 0.6888979635225565
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Thursday",
-          "events_a": 65,
-          "exposure_a": 11937.0,
-          "rate_a": 0.0054452542514869,
-          "group_b": "Sunday",
-          "events_b": 710,
-          "exposure_b": 138903.0,
-          "rate_b": 0.0051114806735635,
-          "rate_ratio": 1.0652988046398524,
-          "adjusted_p_value": 0.7703938986060911
-        }
-      ]
-    },
-    {
-      "label": "Turf",
-      "comparison": "Knee/ankle/foot injuries per 1,000 player-snaps",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Turf",
-          "events_a": 291,
-          "exposure_a": 2357520.0,
-          "rate_a": 0.0001234347958872,
-          "group_b": "Grass",
-          "events_b": 382,
-          "exposure_b": 3394466.0,
-          "rate_b": 0.0001125361102453,
-          "rate_ratio": 1.0968461200420212,
-          "adjusted_p_value": 0.4221331725109212
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Turf",
-          "events_a": 229,
-          "exposure_a": 1754372.0,
-          "rate_a": 0.000130531039027,
-          "group_b": "Grass",
-          "events_b": 245,
-          "exposure_b": 2032762.0,
-          "rate_b": 0.0001205256690158,
-          "rate_ratio": 1.083014432468352,
-          "adjusted_p_value": 0.5818640305277886
-        }
-      ]
-    },
-    {
-      "label": "Short rest",
-      "comparison": "Major-injury events per team-play by rest",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Short rest",
-          "events_a": 81,
-          "exposure_a": 29614.0,
-          "rate_a": 0.0027351928142094,
-          "group_b": "Normal rest",
-          "events_b": 1043,
-          "exposure_b": 443253.0,
-          "rate_b": 0.0023530579601266,
-          "rate_ratio": 1.1623992526143831,
-          "adjusted_p_value": 0.3675857235146146
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Short rest",
-          "events_a": 61,
-          "exposure_a": 22946.0,
-          "rate_a": 0.0026584154100932,
-          "group_b": "Normal rest",
-          "events_b": 773,
-          "exposure_b": 303276.0,
-          "rate_b": 0.0025488334058745,
-          "rate_ratio": 1.042993003766422,
-          "adjusted_p_value": 0.8637295664578245
-        }
-      ]
-    },
-    {
-      "label": "Cold weather",
-      "comparison": "Below 40F vs 40F+ major-injury rate per play",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Below 40F",
-          "events_a": 129,
-          "exposure_a": 28069.0,
-          "rate_a": 0.0045958174498557,
-          "group_b": "40F or warmer",
-          "events_b": 686,
-          "exposure_b": 151073.0,
-          "rate_b": 0.0045408511117142,
-          "rate_ratio": 1.0121048536473063,
-          "adjusted_p_value": 0.9388843633152962
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Below 40F",
-          "events_a": 87,
-          "exposure_a": 20070.0,
-          "rate_a": 0.0043348281016442,
-          "group_b": "40F or warmer",
-          "events_b": 406,
-          "exposure_b": 75897.0,
-          "rate_b": 0.0053493550469715,
-          "rate_ratio": 0.810345932094811,
-          "adjusted_p_value": 0.19054627057949
-        }
-      ]
-    },
-    {
-      "label": "Rookies",
-      "comparison": "Rookies vs veterans: any injuries per 1,000 player-snaps",
-      "data": [
-        {
-          "period": "2016-2021",
-          "group_a": "Rookies",
-          "events_a": 575,
-          "exposure_a": 641956.0,
-          "rate_a": 0.0008957000168235,
-          "group_b": "Veterans",
-          "events_b": 2149,
-          "exposure_b": 2624682.0,
-          "rate_b": 0.0008187658543015,
-          "rate_ratio": 1.093963569826224,
-          "adjusted_p_value": 0.1556797689344465
-        },
-        {
-          "period": "2022-2025",
-          "group_a": "Rookies",
-          "events_a": 428,
-          "exposure_a": 449139.0,
-          "rate_a": 0.0009529343922482,
-          "group_b": "Veterans",
-          "events_b": 1768,
-          "exposure_b": 1860881.0,
-          "rate_b": 0.0009500876197886,
-          "rate_ratio": 1.0029963262338069,
-          "adjusted_p_value": 0.9871487490920844
-        }
-      ]
-    },
-    {
-      "label": "No 2020 preseason",
-      "comparison": "Weeks 1-4 major-injury rate per play",
-      "data": [
-        {
-          "period": "2020 vs 2019 & 2021",
-          "group_a": "2020",
-          "events_a": 59,
-          "exposure_a": 9974.0,
-          "rate_a": 0.0059153799879687,
-          "group_b": "2019 & 2021",
-          "events_b": 86,
-          "exposure_b": 19517.0,
-          "rate_b": 0.0044064149203258,
-          "rate_ratio": 1.342447339827738,
-          "adjusted_p_value": 0.2005297920146733
-        }
-      ]
-    }
+    "Injured reserve hid 795 serious injuries from weekly reports until I added it as a source.",
+    "Play-by-play wording changed in 2024, which made it look like fewer players returned to games.",
+    "Offensive linemen are rarely named in play text (17% vs 47%), so 'returned to the game' had to be redefined.",
+    "The word 'Center' got parsed as a team name, creating 519 false player matches until fixed.",
+    "Public play text caught only 5 of the 35 kickoff concussions the NFL reported in 2025."
   ],
   "process": [
-    "Collected seventeen seasons of nflverse play-by-play.",
-    "Joined play-by-play, rosters, weekly injury reports, and snap counts.",
-    "Labeled injury plays from descriptions, then removed descriptions from model inputs.",
-    "Cleaned roster, position, surface, roof, weather, and status labels.",
-    "Engineered only pre-snap context and play-type features.",
-    "Locked a pre-registered comparison plan before viewing those results.",
-    "One-hot encoded categories and standardized model inputs.",
-    "Trained balanced logistic models for 120 historical windows.",
-    "Tested every window on the immediately following season.",
-    "Refit an unweighted model for calibrated browser predictions.",
-    "Read coefficients as associations and checked uncertainty before making claims."
+    "Joined four public nflverse datasets: play-by-play, rosters, injury reports and snap counts, 2009 to 2025.",
+    "Labeled which plays had an injury, then hid the play text from the model so it only saw pre-snap context.",
+    "Wrote down every comparison I'd test before looking at the results.",
+    "Trained the model on rolling windows of past seasons and tested each one on the following season, 120 models in all.",
+    "Refit one final model and put it in the browser, where its predictions match the Python version exactly."
   ],
-  "disclosures": [
-    "This is an independent portfolio analysis, not an NFL or nflverse product.",
-    "No result should be used to diagnose a player or make an individual medical decision.",
-    "The personal introduction remains a marked placeholder for the author to write."
-  ],
-  "limitations": [
-    "These are associations, not proof that a field condition or play type causes an injury.",
-    "Public descriptions and injury-report conventions changed across seasons.",
-    "Body part was available for only about 30% of parsed injury-player events.",
-    "The interactive model is calibrated on recent public data, not a clinical risk score.",
-    "A recorded injury is not every injury that happened on the field."
-  ],
-  "lessons": [
-    "The hardest modeling problem was defining a trustworthy label.",
-    "A high join rate is evidence; an unmatched row is also evidence.",
-    "Rule changes can alter exposure before they alter per-play risk.",
-    "Stable aggregate rates can hide changing data definitions.",
-    "Pre-registering comparisons makes null results worth reporting.",
-    "Calibration and ranking answer different questions."
+  "nulls": "Thursday games, turf, short rest, cold weather, rookies and the 2020 season with no preseason. None showed a reliable difference in either time period.",
+  "caveats": [
+    "These are associations, not proof that a play type or condition causes injuries.",
+    "A recorded injury isn't every injury, and how injuries were written up changed over the years.",
+    "The model compares situations. It isn't a medical tool and can't predict a specific player's injury.",
+    "Independent project using public data. Not affiliated with the NFL or nflverse."
   ]
 }
