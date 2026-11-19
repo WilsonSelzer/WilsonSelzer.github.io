@@ -1,2 +1,3 @@
-# WilsonSelzer.github.io
-Wilson Selzer: projects and tools
+# Wilson Selzer
+
+Projects and tools: https://wilsonselzer.github.io
