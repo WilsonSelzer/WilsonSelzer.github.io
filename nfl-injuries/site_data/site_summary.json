@@ -1,0 +1,33 @@
+{
+  "tiles": [
+    {
+      "label": "Plays",
+      "value": 716573
+    },
+    {
+      "label": "Recorded injury plays",
+      "value": 12734
+    },
+    {
+      "label": "Seasons",
+      "value": 17
+    },
+    {
+      "label": "Encoded features",
+      "value": 94
+    },
+    {
+      "label": "Data sources joined",
+      "value": 4
+    },
+    {
+      "label": "Models trained",
+      "value": 121
+    }
+  ],
+  "injury_rate": 0.01777069468149093,
+  "seasons": [
+    2009,
+    2025
+  ]
+}

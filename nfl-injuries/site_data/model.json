@@ -1,0 +1,1147 @@
+{
+  "metadata": {
+    "target": "A recorded injury occurs on this play",
+    "training_seasons": [
+      2022,
+      2023,
+      2024
+    ],
+    "test_season": 2025,
+    "class_weight": null,
+    "calibration_method": "Unweighted logistic regression",
+    "standardization": "(one_hot_value - mean) / scale"
+  },
+  "intercept": -4.056767870751693,
+  "features": [
+    {
+      "name": "play_type_pass",
+      "raw_feature": "play_type",
+      "category": "pass",
+      "coefficient": 0.07005787555518925,
+      "mean": 0.469490744296797,
+      "scale": 0.49906831728381457
+    },
+    {
+      "name": "play_type_run",
+      "raw_feature": "play_type",
+      "category": "run",
+      "coefficient": 0.09419713773931482,
+      "mean": 0.3453183808280206,
+      "scale": 0.47547197256054613
+    },
+    {
+      "name": "play_type_special_teams",
+      "raw_feature": "play_type",
+      "category": "special_teams",
+      "coefficient": -0.1405386498926444,
+      "mean": 0.17336200937091942,
+      "scale": 0.37855993327036874
+    },
+    {
+      "name": "play_type_other",
+      "raw_feature": "play_type",
+      "category": "other",
+      "coefficient": -0.24556593045261751,
+      "mean": 0.011828865504263,
+      "scale": 0.10811541724082031
+    },
+    {
+      "name": "special_teams_detail_not_special_teams",
+      "raw_feature": "special_teams_detail",
+      "category": "not_special_teams",
+      "coefficient": 0.14053864989264495,
+      "mean": 0.8266379906290806,
+      "scale": 0.37855993327036874
+    },
+    {
+      "name": "special_teams_detail_kickoff",
+      "raw_feature": "special_teams_detail",
+      "category": "kickoff",
+      "coefficient": 0.06470005732160193,
+      "mean": 0.0662723711498579,
+      "scale": 0.24875760083303294
+    },
+    {
+      "name": "special_teams_detail_punt",
+      "raw_feature": "special_teams_detail",
+      "category": "punt",
+      "coefficient": 0.05330876697186612,
+      "mean": 0.05196251632229818,
+      "scale": 0.2219513758002805
+    },
+    {
+      "name": "special_teams_detail_field_goal",
+      "raw_feature": "special_teams_detail",
+      "category": "field_goal",
+      "coefficient": -0.2779436412814423,
+      "mean": 0.025946693294415853,
+      "scale": 0.15897629509310995
+    },
+    {
+      "name": "special_teams_detail_extra_point",
+      "raw_feature": "special_teams_detail",
+      "category": "extra_point",
+      "coefficient": -0.2194878296866412,
+      "mean": 0.029180428604347493,
+      "scale": 0.16831200548611464
+    },
+    {
+      "name": "shotgun_no",
+      "raw_feature": "shotgun",
+      "category": "no",
+      "coefficient": 0.008997396528875769,
+      "mean": 0.4277594285275367,
+      "scale": 0.49475377697763195
+    },
+    {
+      "name": "shotgun_yes",
+      "raw_feature": "shotgun",
+      "category": "yes",
+      "coefficient": -0.008997396528875769,
+      "mean": 0.5722405714724633,
+      "scale": 0.49475377697763195
+    },
+    {
+      "name": "shotgun_unknown",
+      "raw_feature": "shotgun",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "no_huddle_no",
+      "raw_feature": "no_huddle",
+      "category": "no",
+      "coefficient": -0.024809015661896094,
+      "mean": 0.9116982871188263,
+      "scale": 0.28373318519954116
+    },
+    {
+      "name": "no_huddle_yes",
+      "raw_feature": "no_huddle",
+      "category": "yes",
+      "coefficient": 0.024809015661894973,
+      "mean": 0.08830171288117367,
+      "scale": 0.28373318519954116
+    },
+    {
+      "name": "no_huddle_unknown",
+      "raw_feature": "no_huddle",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "down_bucket_1st",
+      "raw_feature": "down_bucket",
+      "category": "1st",
+      "coefficient": -0.008869529260524006,
+      "mean": 0.363115446654889,
+      "scale": 0.48089772203155395
+    },
+    {
+      "name": "down_bucket_2nd",
+      "raw_feature": "down_bucket",
+      "category": "2nd",
+      "coefficient": -0.005157252833502972,
+      "mean": 0.2736692526307704,
+      "scale": 0.4458412192640897
+    },
+    {
+      "name": "down_bucket_3rd",
+      "raw_feature": "down_bucket",
+      "category": "3rd",
+      "coefficient": 0.03441619018366873,
+      "mean": 0.1702127659574468,
+      "scale": 0.37581961133320557
+    },
+    {
+      "name": "down_bucket_4th",
+      "raw_feature": "down_bucket",
+      "category": "4th",
+      "coefficient": 0.035188521985593746,
+      "mean": 0.09447730240417851,
+      "scale": 0.2924916096826085
+    },
+    {
+      "name": "down_bucket_not_applicable",
+      "raw_feature": "down_bucket",
+      "category": "not_applicable",
+      "coefficient": -0.055908255343221525,
+      "mean": 0.09852523235271526,
+      "scale": 0.29802350736588856
+    },
+    {
+      "name": "distance_bucket_medium_4_7",
+      "raw_feature": "distance_bucket",
+      "category": "medium_4_7",
+      "coefficient": -0.005953887780085472,
+      "mean": 0.18086642599277977,
+      "scale": 0.3849074719219499
+    },
+    {
+      "name": "distance_bucket_goal_or_1",
+      "raw_feature": "distance_bucket",
+      "category": "goal_or_1",
+      "coefficient": -0.003572892904230531,
+      "mean": 0.14875182425685538,
+      "scale": 0.3558436721891871
+    },
+    {
+      "name": "distance_bucket_short_2_3",
+      "raw_feature": "distance_bucket",
+      "category": "short_2_3",
+      "coefficient": -0.01868327322796102,
+      "mean": 0.07578155004224595,
+      "scale": 0.2646482698136092
+    },
+    {
+      "name": "distance_bucket_long_8_10",
+      "raw_feature": "distance_bucket",
+      "category": "long_8_10",
+      "coefficient": -0.0015718621851602815,
+      "mean": 0.4831861126046547,
+      "scale": 0.49971721322218704
+    },
+    {
+      "name": "distance_bucket_very_long_11_plus",
+      "raw_feature": "distance_bucket",
+      "category": "very_long_11_plus",
+      "coefficient": 0.029535167064313535,
+      "mean": 0.11141408710346416,
+      "scale": 0.314644224955909
+    },
+    {
+      "name": "distance_bucket_not_applicable",
+      "raw_feature": "distance_bucket",
+      "category": "not_applicable",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "field_position_midfield",
+      "raw_feature": "field_position",
+      "category": "midfield",
+      "coefficient": 0.028018390312406983,
+      "mean": 0.3404178508333973,
+      "scale": 0.47384969944876565
+    },
+    {
+      "name": "field_position_goal_line",
+      "raw_feature": "field_position",
+      "category": "goal_line",
+      "coefficient": -0.047006347495981836,
+      "mean": 0.03599354789154313,
+      "scale": 0.18627402503247342
+    },
+    {
+      "name": "field_position_red_zone",
+      "raw_feature": "field_position",
+      "category": "red_zone",
+      "coefficient": -0.010062008402146567,
+      "mean": 0.1318841692910362,
+      "scale": 0.33836479601339015
+    },
+    {
+      "name": "field_position_own_territory",
+      "raw_feature": "field_position",
+      "category": "own_territory",
+      "coefficient": -0.0022319369249741627,
+      "mean": 0.49170443198402336,
+      "scale": 0.4999311788149963
+    },
+    {
+      "name": "field_position_unknown",
+      "raw_feature": "field_position",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "quarter_q1",
+      "raw_feature": "quarter",
+      "category": "q1",
+      "coefficient": -0.16164981647310175,
+      "mean": 0.2242338121207466,
+      "scale": 0.41707674308496734
+    },
+    {
+      "name": "quarter_q2",
+      "raw_feature": "quarter",
+      "category": "q2",
+      "coefficient": -0.01795068010216965,
+      "mean": 0.27310853368154236,
+      "scale": 0.44555612722992194
+    },
+    {
+      "name": "quarter_q3",
+      "raw_feature": "quarter",
+      "category": "q3",
+      "coefficient": 0.06879896867030055,
+      "mean": 0.22613872033182272,
+      "scale": 0.41833001266738873
+    },
+    {
+      "name": "quarter_q4",
+      "raw_feature": "quarter",
+      "category": "q4",
+      "coefficient": 0.1014413175833222,
+      "mean": 0.27040479299485365,
+      "scale": 0.4441689328629788
+    },
+    {
+      "name": "quarter_overtime",
+      "raw_feature": "quarter",
+      "category": "overtime",
+      "coefficient": 0.020276933921975535,
+      "mean": 0.006114140871034642,
+      "scale": 0.0779535640778024
+    },
+    {
+      "name": "quarter_unknown",
+      "raw_feature": "quarter",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "time_left_middle_5_10",
+      "raw_feature": "time_left",
+      "category": "middle_5_10",
+      "coefficient": 0.02848389673889455,
+      "mean": 0.3014594054842922,
+      "scale": 0.45889174358403284
+    },
+    {
+      "name": "time_left_opening_10_15",
+      "raw_feature": "time_left",
+      "category": "opening_10_15",
+      "coefficient": -0.008629601031361882,
+      "mean": 0.3156770873338966,
+      "scale": 0.46478496518988843
+    },
+    {
+      "name": "time_left_late_2_5",
+      "raw_feature": "time_left",
+      "category": "late_2_5",
+      "coefficient": 0.039518131717906586,
+      "mean": 0.19425455104078654,
+      "scale": 0.39562573278329993
+    },
+    {
+      "name": "time_left_final_2",
+      "raw_feature": "time_left",
+      "category": "final_2",
+      "coefficient": -0.0631253912604316,
+      "mean": 0.18860895614102466,
+      "scale": 0.39119767101099623
+    },
+    {
+      "name": "time_left_unknown",
+      "raw_feature": "time_left",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "score_situation_tied",
+      "raw_feature": "score_situation",
+      "category": "tied",
+      "coefficient": 0.002055578500433016,
+      "mean": 0.1897764805284584,
+      "scale": 0.3921241741676651
+    },
+    {
+      "name": "score_situation_trailing_9_plus",
+      "raw_feature": "score_situation",
+      "category": "trailing_9_plus",
+      "coefficient": 0.010393833909994077,
+      "mean": 0.1935094861356479,
+      "scale": 0.39504881332746933
+    },
+    {
+      "name": "score_situation_close_trailing",
+      "raw_feature": "score_situation",
+      "category": "close_trailing",
+      "coefficient": 0.022844021457704262,
+      "mean": 0.272985636377602,
+      "scale": 0.4454935226342573
+    },
+    {
+      "name": "score_situation_close_leading",
+      "raw_feature": "score_situation",
+      "category": "close_leading",
+      "coefficient": -0.024649228184668717,
+      "mean": 0.2112835087180275,
+      "scale": 0.4082190437273952
+    },
+    {
+      "name": "score_situation_leading_9_plus",
+      "raw_feature": "score_situation",
+      "category": "leading_9_plus",
+      "coefficient": -0.014829148879267336,
+      "mean": 0.13244488824026424,
+      "scale": 0.3389738040313516
+    },
+    {
+      "name": "score_situation_unknown",
+      "raw_feature": "score_situation",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "home_away_away",
+      "raw_feature": "home_away",
+      "category": "away",
+      "coefficient": -0.021212096320174335,
+      "mean": 0.49713495660188955,
+      "scale": 0.49999179145880285
+    },
+    {
+      "name": "home_away_home",
+      "raw_feature": "home_away",
+      "category": "home",
+      "coefficient": 0.021212096320174335,
+      "mean": 0.5028650433981104,
+      "scale": 0.49999179145880285
+    },
+    {
+      "name": "home_away_unknown",
+      "raw_feature": "home_away",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "surface_group_grass",
+      "raw_feature": "surface_group",
+      "category": "grass",
+      "coefficient": -0.006553800470013184,
+      "mean": 0.5064521084568707,
+      "scale": 0.4999583685638754
+    },
+    {
+      "name": "surface_group_turf",
+      "raw_feature": "surface_group",
+      "category": "turf",
+      "coefficient": -0.019928371062100863,
+      "mean": 0.4424994239188878,
+      "scale": 0.4966826791326339
+    },
+    {
+      "name": "surface_group_unknown",
+      "raw_feature": "surface_group",
+      "category": "unknown",
+      "coefficient": 0.059858730209687065,
+      "mean": 0.05104846762424149,
+      "scale": 0.22009661873271166
+    },
+    {
+      "name": "roof_group_outdoor",
+      "raw_feature": "roof_group",
+      "category": "outdoor",
+      "coefficient": 0.030485653902182948,
+      "mean": 0.6811275827636531,
+      "scale": 0.46603948197790135
+    },
+    {
+      "name": "roof_group_dome",
+      "raw_feature": "roof_group",
+      "category": "dome",
+      "coefficient": -0.030485653902182948,
+      "mean": 0.31887241723634685,
+      "scale": 0.46603948197790135
+    },
+    {
+      "name": "roof_group_retractable",
+      "raw_feature": "roof_group",
+      "category": "retractable",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "roof_group_unknown",
+      "raw_feature": "roof_group",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "temperature_40_to_69",
+      "raw_feature": "temperature",
+      "category": "40_to_69",
+      "coefficient": -0.031461850824961814,
+      "mean": 0.29528381596128733,
+      "scale": 0.4561702357595233
+    },
+    {
+      "name": "temperature_under_40",
+      "raw_feature": "temperature",
+      "category": "under_40",
+      "coefficient": -0.013028369640441724,
+      "mean": 0.11076119517628082,
+      "scale": 0.3138361878742236
+    },
+    {
+      "name": "temperature_70_plus",
+      "raw_feature": "temperature",
+      "category": "70_plus",
+      "coefficient": 0.025780452485807483,
+      "mean": 0.11401797373070129,
+      "scale": 0.3178330936152032
+    },
+    {
+      "name": "temperature_unknown",
+      "raw_feature": "temperature",
+      "category": "unknown",
+      "coefficient": 0.020510223944298883,
+      "mean": 0.47993701513173054,
+      "scale": 0.49959731448319983
+    },
+    {
+      "name": "wind_moderate_6_15",
+      "raw_feature": "wind",
+      "category": "moderate_6_15",
+      "coefficient": -0.017809660009906417,
+      "mean": 0.3235886012750595,
+      "scale": 0.4678450794869616
+    },
+    {
+      "name": "wind_calm_0_5",
+      "raw_feature": "wind",
+      "category": "calm_0_5",
+      "coefficient": -0.016129172848691763,
+      "mean": 0.1634457331592288,
+      "scale": 0.3697718559752931
+    },
+    {
+      "name": "wind_strong_16_plus",
+      "raw_feature": "wind",
+      "category": "strong_16_plus",
+      "coefficient": 0.022659010833299832,
+      "mean": 0.03302865043398111,
+      "scale": 0.17871138375717713
+    },
+    {
+      "name": "wind_unknown",
+      "raw_feature": "wind",
+      "category": "unknown",
+      "coefficient": 0.020510223944298883,
+      "mean": 0.47993701513173054,
+      "scale": 0.49959731448319983
+    },
+    {
+      "name": "week_of_season_week_1",
+      "raw_feature": "week_of_season",
+      "category": "week_1",
+      "coefficient": -0.08991474855388003,
+      "mean": 0.05624855979721945,
+      "scale": 0.23040108358664166
+    },
+    {
+      "name": "week_of_season_week_2",
+      "raw_feature": "week_of_season",
+      "category": "week_2",
+      "coefficient": -0.1147446363546492,
+      "mean": 0.05563407327751747,
+      "scale": 0.22921370632671606
+    },
+    {
+      "name": "week_of_season_week_3",
+      "raw_feature": "week_of_season",
+      "category": "week_3",
+      "coefficient": 0.02937549672202595,
+      "mean": 0.056486673323603964,
+      "scale": 0.23085911084599692
+    },
+    {
+      "name": "week_of_season_week_4",
+      "raw_feature": "week_of_season",
+      "category": "week_4",
+      "coefficient": -0.016000923395781408,
+      "mean": 0.05548813272908826,
+      "scale": 0.22893055684082125
+    },
+    {
+      "name": "week_of_season_week_5",
+      "raw_feature": "week_of_season",
+      "category": "week_5",
+      "coefficient": 0.005399002633049017,
+      "mean": 0.052231354174667795,
+      "scale": 0.22249323543866908
+    },
+    {
+      "name": "week_of_season_week_6",
+      "raw_feature": "week_of_season",
+      "category": "week_6",
+      "coefficient": 0.03003160858184962,
+      "mean": 0.050457024349028344,
+      "scale": 0.21888607320407258
+    },
+    {
+      "name": "week_of_season_week_7",
+      "raw_feature": "week_of_season",
+      "category": "week_7",
+      "coefficient": 0.025825608261547957,
+      "mean": 0.048383132345034184,
+      "scale": 0.21457447389995404
+    },
+    {
+      "name": "week_of_season_week_8",
+      "raw_feature": "week_of_season",
+      "category": "week_8",
+      "coefficient": -0.03479567057192711,
+      "mean": 0.05517320838774099,
+      "scale": 0.22831803578360563
+    },
+    {
+      "name": "week_of_season_week_9",
+      "raw_feature": "week_of_season",
+      "category": "week_9",
+      "coefficient": 0.03345259156680641,
+      "mean": 0.04937399185805361,
+      "scale": 0.2166476420046117
+    },
+    {
+      "name": "week_of_season_week_10",
+      "raw_feature": "week_of_season",
+      "category": "week_10",
+      "coefficient": -0.007829994373820811,
+      "mean": 0.04944312159152009,
+      "scale": 0.21679137279583735
+    },
+    {
+      "name": "week_of_season_week_11",
+      "raw_feature": "week_of_season",
+      "category": "week_11",
+      "coefficient": 0.030655500055082302,
+      "mean": 0.04883631615331439,
+      "scale": 0.2155257069999645
+    },
+    {
+      "name": "week_of_season_week_12",
+      "raw_feature": "week_of_season",
+      "category": "week_12",
+      "coefficient": -0.004081974102323306,
+      "mean": 0.05293801367232506,
+      "scale": 0.2239097594582523
+    },
+    {
+      "name": "week_of_season_week_13",
+      "raw_feature": "week_of_season",
+      "category": "week_13",
+      "coefficient": 0.04290628380649846,
+      "mean": 0.05261540824948153,
+      "scale": 0.22326447783773193
+    },
+    {
+      "name": "week_of_season_week_14",
+      "raw_feature": "week_of_season",
+      "category": "week_14",
+      "coefficient": 0.0473020574654558,
+      "mean": 0.048613564789922424,
+      "scale": 0.2150587968633125
+    },
+    {
+      "name": "week_of_season_week_15",
+      "raw_feature": "week_of_season",
+      "category": "week_15",
+      "coefficient": 0.030093590791897988,
+      "mean": 0.056256240878715724,
+      "scale": 0.2304158767115844
+    },
+    {
+      "name": "week_of_season_week_16",
+      "raw_feature": "week_of_season",
+      "category": "week_16",
+      "coefficient": 0.004075563818901601,
+      "mean": 0.05618711114524925,
+      "scale": 0.23028269515212038
+    },
+    {
+      "name": "week_of_season_week_17",
+      "raw_feature": "week_of_season",
+      "category": "week_17",
+      "coefficient": 0.0017783954958904378,
+      "mean": 0.054359013749135876,
+      "scale": 0.22672474803888068
+    },
+    {
+      "name": "week_of_season_week_18",
+      "raw_feature": "week_of_season",
+      "category": "week_18",
+      "coefficient": -0.031249017326664248,
+      "mean": 0.05530378677317766,
+      "scale": 0.22857225978195317
+    },
+    {
+      "name": "week_of_season_week_19",
+      "raw_feature": "week_of_season",
+      "category": "week_19",
+      "coefficient": 0.039812711476940384,
+      "mean": 0.020977033566326138,
+      "scale": 0.143307353716103
+    },
+    {
+      "name": "week_of_season_week_20",
+      "raw_feature": "week_of_season",
+      "category": "week_20",
+      "coefficient": -0.004089893229044471,
+      "mean": 0.013979568323219909,
+      "scale": 0.11740587716420078
+    },
+    {
+      "name": "week_of_season_week_21",
+      "raw_feature": "week_of_season",
+      "category": "week_21",
+      "coefficient": 0.03385004844892979,
+      "mean": 0.0072586220139795685,
+      "scale": 0.08488777544761425
+    },
+    {
+      "name": "week_of_season_week_22",
+      "raw_feature": "week_of_season",
+      "category": "week_22",
+      "coefficient": -0.02778767633438135,
+      "mean": 0.003756048851678316,
+      "scale": 0.06117140629990189
+    },
+    {
+      "name": "week_of_season_unknown",
+      "raw_feature": "week_of_season",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "game_day_Sunday",
+      "raw_feature": "game_day",
+      "category": "Sunday",
+      "coefficient": 0.00812125885501467,
+      "mean": 0.8029956217835471,
+      "scale": 0.3977356574157516
+    },
+    {
+      "name": "game_day_Thursday",
+      "raw_feature": "game_day",
+      "category": "Thursday",
+      "coefficient": 0.018537192548809034,
+      "mean": 0.06712497119594439,
+      "scale": 0.2502383052970083
+    },
+    {
+      "name": "game_day_Monday",
+      "raw_feature": "game_day",
+      "category": "Monday",
+      "coefficient": -0.023482817250464017,
+      "mean": 0.0736462093862816,
+      "scale": 0.26119426722136213
+    },
+    {
+      "name": "game_day_other",
+      "raw_feature": "game_day",
+      "category": "other",
+      "coefficient": -0.007532410395536807,
+      "mean": 0.0562331976342269,
+      "scale": 0.23037149371867147
+    },
+    {
+      "name": "game_day_unknown",
+      "raw_feature": "game_day",
+      "category": "unknown",
+      "coefficient": 0.0,
+      "mean": 0.0,
+      "scale": 1.0
+    }
+  ],
+  "categories": {
+    "play_type": [
+      "pass",
+      "run",
+      "special_teams",
+      "other"
+    ],
+    "special_teams_detail": [
+      "not_special_teams",
+      "kickoff",
+      "punt",
+      "field_goal",
+      "extra_point"
+    ],
+    "shotgun": [
+      "no",
+      "yes",
+      "unknown"
+    ],
+    "no_huddle": [
+      "no",
+      "yes",
+      "unknown"
+    ],
+    "down_bucket": [
+      "1st",
+      "2nd",
+      "3rd",
+      "4th",
+      "not_applicable"
+    ],
+    "distance_bucket": [
+      "medium_4_7",
+      "goal_or_1",
+      "short_2_3",
+      "long_8_10",
+      "very_long_11_plus",
+      "not_applicable"
+    ],
+    "field_position": [
+      "midfield",
+      "goal_line",
+      "red_zone",
+      "own_territory",
+      "unknown"
+    ],
+    "quarter": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "overtime",
+      "unknown"
+    ],
+    "time_left": [
+      "middle_5_10",
+      "opening_10_15",
+      "late_2_5",
+      "final_2",
+      "unknown"
+    ],
+    "score_situation": [
+      "tied",
+      "trailing_9_plus",
+      "close_trailing",
+      "close_leading",
+      "leading_9_plus",
+      "unknown"
+    ],
+    "home_away": [
+      "away",
+      "home",
+      "unknown"
+    ],
+    "surface_group": [
+      "grass",
+      "turf",
+      "unknown"
+    ],
+    "roof_group": [
+      "outdoor",
+      "dome",
+      "retractable",
+      "unknown"
+    ],
+    "temperature": [
+      "40_to_69",
+      "under_40",
+      "70_plus",
+      "unknown"
+    ],
+    "wind": [
+      "moderate_6_15",
+      "calm_0_5",
+      "strong_16_plus",
+      "unknown"
+    ],
+    "week_of_season": [
+      "week_1",
+      "week_2",
+      "week_3",
+      "week_4",
+      "week_5",
+      "week_6",
+      "week_7",
+      "week_8",
+      "week_9",
+      "week_10",
+      "week_11",
+      "week_12",
+      "week_13",
+      "week_14",
+      "week_15",
+      "week_16",
+      "week_17",
+      "week_18",
+      "week_19",
+      "week_20",
+      "week_21",
+      "week_22",
+      "unknown"
+    ],
+    "game_day": [
+      "Sunday",
+      "Thursday",
+      "Monday",
+      "other",
+      "unknown"
+    ]
+  },
+  "defaults": {
+    "play_type": "pass",
+    "special_teams_detail": "not_special_teams",
+    "shotgun": "yes",
+    "no_huddle": "no",
+    "down_bucket": "1st",
+    "distance_bucket": "long_8_10",
+    "field_position": "own_territory",
+    "quarter": "q2",
+    "time_left": "opening_10_15",
+    "score_situation": "close_trailing",
+    "home_away": "home",
+    "surface_group": "grass",
+    "roof_group": "outdoor",
+    "temperature": "unknown",
+    "wind": "unknown",
+    "week_of_season": "week_3",
+    "game_day": "Sunday"
+  },
+  "league_average": 0.01777069468149093,
+  "recent_training_average": 0.02015515784622475,
+  "validation": {
+    "test_plays": 42603,
+    "test_injuries": 917,
+    "observed_rate": 0.02152430580006103,
+    "mean_prediction": 0.019767568847257253,
+    "roc_auc": 0.5931685429694536,
+    "pr_auc": 0.027716004001663783,
+    "brier_score": 0.021022772691512776,
+    "base_rate_brier": 0.021062884626005973,
+    "brier_improvement": 4.011193449319703e-05,
+    "beats_base_rate": true
+  },
+  "top_weights": [
+    {
+      "name": "special_teams_detail_field_goal",
+      "raw_feature": "special_teams_detail",
+      "category": "field_goal",
+      "coefficient": -0.2779436412814423,
+      "mean": 0.025946693294415853,
+      "scale": 0.15897629509310995
+    },
+    {
+      "name": "play_type_other",
+      "raw_feature": "play_type",
+      "category": "other",
+      "coefficient": -0.24556593045261751,
+      "mean": 0.011828865504263,
+      "scale": 0.10811541724082031
+    },
+    {
+      "name": "special_teams_detail_extra_point",
+      "raw_feature": "special_teams_detail",
+      "category": "extra_point",
+      "coefficient": -0.2194878296866412,
+      "mean": 0.029180428604347493,
+      "scale": 0.16831200548611464
+    },
+    {
+      "name": "quarter_q1",
+      "raw_feature": "quarter",
+      "category": "q1",
+      "coefficient": -0.16164981647310175,
+      "mean": 0.2242338121207466,
+      "scale": 0.41707674308496734
+    },
+    {
+      "name": "special_teams_detail_not_special_teams",
+      "raw_feature": "special_teams_detail",
+      "category": "not_special_teams",
+      "coefficient": 0.14053864989264495,
+      "mean": 0.8266379906290806,
+      "scale": 0.37855993327036874
+    },
+    {
+      "name": "play_type_special_teams",
+      "raw_feature": "play_type",
+      "category": "special_teams",
+      "coefficient": -0.1405386498926444,
+      "mean": 0.17336200937091942,
+      "scale": 0.37855993327036874
+    },
+    {
+      "name": "week_of_season_week_2",
+      "raw_feature": "week_of_season",
+      "category": "week_2",
+      "coefficient": -0.1147446363546492,
+      "mean": 0.05563407327751747,
+      "scale": 0.22921370632671606
+    },
+    {
+      "name": "quarter_q4",
+      "raw_feature": "quarter",
+      "category": "q4",
+      "coefficient": 0.1014413175833222,
+      "mean": 0.27040479299485365,
+      "scale": 0.4441689328629788
+    },
+    {
+      "name": "play_type_run",
+      "raw_feature": "play_type",
+      "category": "run",
+      "coefficient": 0.09419713773931482,
+      "mean": 0.3453183808280206,
+      "scale": 0.47547197256054613
+    },
+    {
+      "name": "week_of_season_week_1",
+      "raw_feature": "week_of_season",
+      "category": "week_1",
+      "coefficient": -0.08991474855388003,
+      "mean": 0.05624855979721945,
+      "scale": 0.23040108358664166
+    },
+    {
+      "name": "play_type_pass",
+      "raw_feature": "play_type",
+      "category": "pass",
+      "coefficient": 0.07005787555518925,
+      "mean": 0.469490744296797,
+      "scale": 0.49906831728381457
+    },
+    {
+      "name": "quarter_q3",
+      "raw_feature": "quarter",
+      "category": "q3",
+      "coefficient": 0.06879896867030055,
+      "mean": 0.22613872033182272,
+      "scale": 0.41833001266738873
+    }
+  ],
+  "sample_checks": [
+    {
+      "name": "Fourth-quarter outdoor kickoff in the cold",
+      "values": {
+        "play_type": "special_teams",
+        "special_teams_detail": "kickoff",
+        "shotgun": "yes",
+        "no_huddle": "no",
+        "down_bucket": "not_applicable",
+        "distance_bucket": "not_applicable",
+        "field_position": "own_territory",
+        "quarter": "q4",
+        "time_left": "final_2",
+        "score_situation": "close_trailing",
+        "home_away": "home",
+        "surface_group": "grass",
+        "roof_group": "outdoor",
+        "temperature": "under_40",
+        "wind": "unknown",
+        "week_of_season": "week_3",
+        "game_day": "Sunday"
+      },
+      "python_probability": 0.012492179497071676
+    },
+    {
+      "name": "First-and-10 pass in a dome",
+      "values": {
+        "play_type": "pass",
+        "special_teams_detail": "not_special_teams",
+        "shotgun": "yes",
+        "no_huddle": "no",
+        "down_bucket": "1st",
+        "distance_bucket": "long_8_10",
+        "field_position": "midfield",
+        "quarter": "q1",
+        "time_left": "opening_10_15",
+        "score_situation": "tied",
+        "home_away": "home",
+        "surface_group": "turf",
+        "roof_group": "dome",
+        "temperature": "unknown",
+        "wind": "unknown",
+        "week_of_season": "week_3",
+        "game_day": "Sunday"
+      },
+      "python_probability": 0.016108289269530222
+    },
+    {
+      "name": "Third-and-short red-zone run",
+      "values": {
+        "play_type": "run",
+        "special_teams_detail": "not_special_teams",
+        "shotgun": "yes",
+        "no_huddle": "no",
+        "down_bucket": "3rd",
+        "distance_bucket": "short_2_3",
+        "field_position": "red_zone",
+        "quarter": "q2",
+        "time_left": "middle_5_10",
+        "score_situation": "close_leading",
+        "home_away": "home",
+        "surface_group": "grass",
+        "roof_group": "outdoor",
+        "temperature": "40_to_69",
+        "wind": "unknown",
+        "week_of_season": "week_3",
+        "game_day": "Thursday"
+      },
+      "python_probability": 0.025656642926740365
+    },
+    {
+      "name": "Fourth-down punt on turf",
+      "values": {
+        "play_type": "special_teams",
+        "special_teams_detail": "punt",
+        "shotgun": "yes",
+        "no_huddle": "no",
+        "down_bucket": "4th",
+        "distance_bucket": "very_long_11_plus",
+        "field_position": "own_territory",
+        "quarter": "q3",
+        "time_left": "late_2_5",
+        "score_situation": "trailing_9_plus",
+        "home_away": "home",
+        "surface_group": "turf",
+        "roof_group": "outdoor",
+        "temperature": "70_plus",
+        "wind": "unknown",
+        "week_of_season": "week_3",
+        "game_day": "Monday"
+      },
+      "python_probability": 0.021236426918299234
+    },
+    {
+      "name": "Goal-line field goal",
+      "values": {
+        "play_type": "special_teams",
+        "special_teams_detail": "field_goal",
+        "shotgun": "yes",
+        "no_huddle": "no",
+        "down_bucket": "4th",
+        "distance_bucket": "goal_or_1",
+        "field_position": "goal_line",
+        "quarter": "q4",
+        "time_left": "final_2",
+        "score_situation": "close_trailing",
+        "home_away": "home",
+        "surface_group": "grass",
+        "roof_group": "retractable",
+        "temperature": "70_plus",
+        "wind": "unknown",
+        "week_of_season": "week_3",
+        "game_day": "other"
+      },
+      "python_probability": 0.0017887722286231572
+    }
+  ]
+}

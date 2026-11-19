@@ -1,0 +1,989 @@
+{
+  "zones": [
+    "own_end_zone",
+    "own_1_10",
+    "own_11_20",
+    "own_21_30",
+    "own_31_40",
+    "own_41_50",
+    "opponent_41_50",
+    "opponent_31_40",
+    "opponent_21_30",
+    "opponent_11_20",
+    "opponent_1_10",
+    "opponent_end_zone"
+  ],
+  "play_types": [
+    "all",
+    "extra_point",
+    "field_goal",
+    "kickoff",
+    "other",
+    "pass",
+    "punt",
+    "run"
+  ],
+  "minimum_reliable_sample": 1000,
+  "rows": [
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "all",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 15605,
+      "injuries": 277,
+      "major_injuries": 57,
+      "play_type": "all",
+      "label": "Own 1\u201310",
+      "injury_rate": 0.0177507209,
+      "major_injury_rate": 0.0036526754
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 45875,
+      "injuries": 824,
+      "major_injuries": 177,
+      "play_type": "all",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0179618529,
+      "major_injury_rate": 0.0038583106
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 113918,
+      "injuries": 2141,
+      "major_injuries": 455,
+      "play_type": "all",
+      "label": "Own 21\u201330",
+      "injury_rate": 0.0187942204,
+      "major_injury_rate": 0.003994101
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 99884,
+      "injuries": 1878,
+      "major_injuries": 415,
+      "play_type": "all",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0188018101,
+      "major_injury_rate": 0.0041548196
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 85898,
+      "injuries": 1648,
+      "major_injuries": 355,
+      "play_type": "all",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0191855456,
+      "major_injury_rate": 0.0041328087
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 73349,
+      "injuries": 1478,
+      "major_injuries": 292,
+      "play_type": "all",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0201502406,
+      "major_injury_rate": 0.0039809677
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 104106,
+      "injuries": 1668,
+      "major_injuries": 393,
+      "play_type": "all",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0160221313,
+      "major_injury_rate": 0.0037749986
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 60198,
+      "injuries": 1106,
+      "major_injuries": 234,
+      "play_type": "all",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0183727034,
+      "major_injury_rate": 0.0038871723
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 63462,
+      "injuries": 953,
+      "major_injuries": 191,
+      "play_type": "all",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0150168605,
+      "major_injury_rate": 0.0030096751
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 54278,
+      "injuries": 761,
+      "major_injuries": 151,
+      "play_type": "all",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0140204134,
+      "major_injury_rate": 0.0027819743
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "all",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own 1\u201310",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own 11\u201320",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own 21\u201330",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own 31\u201340",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Own 41\u201350",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Opp 41\u201350",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Opp 31\u201340",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 57,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 14010,
+      "injuries": 23,
+      "major_injuries": 5,
+      "play_type": "extra_point",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0016416845,
+      "major_injury_rate": 0.0003568879
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 7730,
+      "injuries": 13,
+      "major_injuries": 4,
+      "play_type": "extra_point",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0016817594,
+      "major_injury_rate": 0.0005174644
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "extra_point",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own 1\u201310",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own 11\u201320",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own 21\u201330",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 1,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 2,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 191,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 3283,
+      "injuries": 12,
+      "major_injuries": 3,
+      "play_type": "field_goal",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0036551934,
+      "major_injury_rate": 0.0009137984
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 5315,
+      "injuries": 11,
+      "major_injuries": 2,
+      "play_type": "field_goal",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0020696143,
+      "major_injury_rate": 0.0003762935
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 5159,
+      "injuries": 6,
+      "major_injuries": 1,
+      "play_type": "field_goal",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0011630161,
+      "major_injury_rate": 0.000193836
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 3944,
+      "injuries": 4,
+      "major_injuries": 1,
+      "play_type": "field_goal",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0010141988,
+      "major_injury_rate": 0.0002535497
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "field_goal",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own 1\u201310",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 1,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own 21\u201330",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 2,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 2,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 335,
+      "injuries": 5,
+      "major_injuries": 1,
+      "play_type": "kickoff",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0149253731,
+      "major_injury_rate": 0.0029850746
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 41101,
+      "injuries": 435,
+      "major_injuries": 143,
+      "play_type": "kickoff",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0105836841,
+      "major_injury_rate": 0.0034792341
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 5203,
+      "injuries": 101,
+      "major_injuries": 14,
+      "play_type": "kickoff",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0194118778,
+      "major_injury_rate": 0.0026907553
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 520,
+      "injuries": 5,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0096153846,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 3,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "kickoff",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 355,
+      "injuries": 1,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Own 1\u201310",
+      "injury_rate": 0.0028169014,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 630,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 1340,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Own 21\u201330",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 872,
+      "injuries": 1,
+      "major_injuries": 1,
+      "play_type": "other",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.001146789,
+      "major_injury_rate": 0.001146789
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 843,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 1244,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 1010,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 857,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 659,
+      "injuries": 1,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0015174507,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 495,
+      "injuries": 1,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.002020202,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "other",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "pass",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 6774,
+      "injuries": 126,
+      "major_injuries": 18,
+      "play_type": "pass",
+      "label": "Own 1\u201310",
+      "injury_rate": 0.0186005314,
+      "major_injury_rate": 0.0026572188
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 23856,
+      "injuries": 446,
+      "major_injuries": 86,
+      "play_type": "pass",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0186955064,
+      "major_injury_rate": 0.0036049631
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 62073,
+      "injuries": 1216,
+      "major_injuries": 253,
+      "play_type": "pass",
+      "label": "Own 21\u201330",
+      "injury_rate": 0.0195898378,
+      "major_injury_rate": 0.0040758462
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 53965,
+      "injuries": 1007,
+      "major_injuries": 217,
+      "play_type": "pass",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0186602427,
+      "major_injury_rate": 0.0040211248
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 46744,
+      "injuries": 964,
+      "major_injuries": 208,
+      "play_type": "pass",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0206229677,
+      "major_injury_rate": 0.004449769
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 39273,
+      "injuries": 859,
+      "major_injuries": 161,
+      "play_type": "pass",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0218725333,
+      "major_injury_rate": 0.0040995086
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 33522,
+      "injuries": 692,
+      "major_injuries": 146,
+      "play_type": "pass",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0206431597,
+      "major_injury_rate": 0.0043553487
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 27812,
+      "injuries": 552,
+      "major_injuries": 133,
+      "play_type": "pass",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0198475478,
+      "major_injury_rate": 0.0047821084
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 24263,
+      "injuries": 465,
+      "major_injuries": 92,
+      "play_type": "pass",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0191649837,
+      "major_injury_rate": 0.0037917817
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 21069,
+      "injuries": 306,
+      "major_injuries": 63,
+      "play_type": "pass",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0145237078,
+      "major_injury_rate": 0.0029901751
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "pass",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "punt",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 1450,
+      "injuries": 35,
+      "major_injuries": 8,
+      "play_type": "punt",
+      "label": "Own 1\u201310",
+      "injury_rate": 0.024137931,
+      "major_injury_rate": 0.0055172414
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 5019,
+      "injuries": 87,
+      "major_injuries": 30,
+      "play_type": "punt",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0173341303,
+      "major_injury_rate": 0.0059772863
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 9864,
+      "injuries": 160,
+      "major_injuries": 43,
+      "play_type": "punt",
+      "label": "Own 21\u201330",
+      "injury_rate": 0.0162206002,
+      "major_injury_rate": 0.0043592863
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 9333,
+      "injuries": 135,
+      "major_injuries": 51,
+      "play_type": "punt",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0144648023,
+      "major_injury_rate": 0.0054644809
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 7687,
+      "injuries": 65,
+      "major_injuries": 17,
+      "play_type": "punt",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0084558345,
+      "major_injury_rate": 0.002211526
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 5639,
+      "injuries": 34,
+      "major_injuries": 8,
+      "play_type": "punt",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0060294378,
+      "major_injury_rate": 0.0014186913
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 1419,
+      "injuries": 3,
+      "major_injuries": 1,
+      "play_type": "punt",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0021141649,
+      "major_injury_rate": 0.0007047216
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 10,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "punt",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0,
+      "major_injury_rate": 0.0
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "punt",
+      "label": "Opp 11\u201320",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "punt",
+      "label": "Opp 1\u201310",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "punt",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "run",
+      "label": "Own end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    },
+    {
+      "zone": "own_1_10",
+      "plays": 7026,
+      "injuries": 115,
+      "major_injuries": 31,
+      "play_type": "run",
+      "label": "Own 1\u201310",
+      "injury_rate": 0.0163677768,
+      "major_injury_rate": 0.0044121833
+    },
+    {
+      "zone": "own_11_20",
+      "plays": 16369,
+      "injuries": 291,
+      "major_injuries": 61,
+      "play_type": "run",
+      "label": "Own 11\u201320",
+      "injury_rate": 0.0177775063,
+      "major_injury_rate": 0.0037265563
+    },
+    {
+      "zone": "own_21_30",
+      "plays": 40641,
+      "injuries": 765,
+      "major_injuries": 159,
+      "play_type": "run",
+      "label": "Own 21\u201330",
+      "injury_rate": 0.0188233557,
+      "major_injury_rate": 0.0039123053
+    },
+    {
+      "zone": "own_31_40",
+      "plays": 35711,
+      "injuries": 735,
+      "major_injuries": 146,
+      "play_type": "run",
+      "label": "Own 31\u201340",
+      "injury_rate": 0.0205818935,
+      "major_injury_rate": 0.0040883761
+    },
+    {
+      "zone": "own_41_50",
+      "plays": 30620,
+      "injuries": 619,
+      "major_injuries": 130,
+      "play_type": "run",
+      "label": "Own 41\u201350",
+      "injury_rate": 0.0202155454,
+      "major_injury_rate": 0.0042455911
+    },
+    {
+      "zone": "opponent_41_50",
+      "plays": 26667,
+      "injuries": 580,
+      "major_injuries": 122,
+      "play_type": "run",
+      "label": "Opp 41\u201350",
+      "injury_rate": 0.0217497281,
+      "major_injury_rate": 0.0045749428
+    },
+    {
+      "zone": "opponent_31_40",
+      "plays": 23771,
+      "injuries": 526,
+      "major_injuries": 100,
+      "play_type": "run",
+      "label": "Opp 31\u201340",
+      "injury_rate": 0.0221278028,
+      "major_injury_rate": 0.0042068066
+    },
+    {
+      "zone": "opponent_21_30",
+      "plays": 20944,
+      "injuries": 442,
+      "major_injuries": 85,
+      "play_type": "run",
+      "label": "Opp 21\u201330",
+      "injury_rate": 0.0211038961,
+      "major_injury_rate": 0.0040584416
+    },
+    {
+      "zone": "opponent_11_20",
+      "plays": 18851,
+      "injuries": 453,
+      "major_injuries": 93,
+      "play_type": "run",
+      "label": "Opp 11\u201320",
+      "injury_rate": 0.0240305554,
+      "major_injury_rate": 0.0049334253
+    },
+    {
+      "zone": "opponent_1_10",
+      "plays": 21037,
+      "injuries": 437,
+      "major_injuries": 83,
+      "play_type": "run",
+      "label": "Opp 1\u201310",
+      "injury_rate": 0.0207729239,
+      "major_injury_rate": 0.0039454295
+    },
+    {
+      "zone": "opponent_end_zone",
+      "plays": 0,
+      "injuries": 0,
+      "major_injuries": 0,
+      "play_type": "run",
+      "label": "Opp end zone",
+      "injury_rate": null,
+      "major_injury_rate": null
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "series": [
+    {
+      "test_year": 2023,
+      "training_length": "2-year",
+      "train_start": 2021,
+      "train_end": 2022,
+      "roc_auc": 0.6025190512123251,
+      "roc_auc_ci_low": 0.585327526247668,
+      "roc_auc_ci_high": 0.6169666107418165
+    },
+    {
+      "test_year": 2023,
+      "training_length": "5-year",
+      "train_start": 2018,
+      "train_end": 2022,
+      "roc_auc": 0.6047721407851416,
+      "roc_auc_ci_low": 0.5874799371255066,
+      "roc_auc_ci_high": 0.6202607335804438
+    },
+    {
+      "test_year": 2023,
+      "training_length": "all-history",
+      "train_start": 2009,
+      "train_end": 2022,
+      "roc_auc": 0.5998284022353886,
+      "roc_auc_ci_low": 0.5849859540328018,
+      "roc_auc_ci_high": 0.6161200741827663
+    },
+    {
+      "test_year": 2024,
+      "training_length": "2-year",
+      "train_start": 2022,
+      "train_end": 2023,
+      "roc_auc": 0.6092701897970563,
+      "roc_auc_ci_low": 0.5916513314572602,
+      "roc_auc_ci_high": 0.627745495440808
+    },
+    {
+      "test_year": 2024,
+      "training_length": "5-year",
+      "train_start": 2019,
+      "train_end": 2023,
+      "roc_auc": 0.6158318342277417,
+      "roc_auc_ci_low": 0.6007667733730601,
+      "roc_auc_ci_high": 0.6323341755615753
+    },
+    {
+      "test_year": 2024,
+      "training_length": "all-history",
+      "train_start": 2009,
+      "train_end": 2023,
+      "roc_auc": 0.6154073895113187,
+      "roc_auc_ci_low": 0.5980477333752087,
+      "roc_auc_ci_high": 0.6332326017532119
+    },
+    {
+      "test_year": 2025,
+      "training_length": "2-year",
+      "train_start": 2023,
+      "train_end": 2024,
+      "roc_auc": 0.5931916423930877,
+      "roc_auc_ci_low": 0.5726500986421253,
+      "roc_auc_ci_high": 0.611848209737116
+    },
+    {
+      "test_year": 2025,
+      "training_length": "5-year",
+      "train_start": 2020,
+      "train_end": 2024,
+      "roc_auc": 0.5991775061736676,
+      "roc_auc_ci_low": 0.5779997672137925,
+      "roc_auc_ci_high": 0.6188104168956771
+    },
+    {
+      "test_year": 2025,
+      "training_length": "all-history",
+      "train_start": 2009,
+      "train_end": 2024,
+      "roc_auc": 0.6012182866234037,
+      "roc_auc_ci_low": 0.5865128439727848,
+      "roc_auc_ci_high": 0.6176949384035426
+    }
+  ],
+  "conclusions": [
+    {
+      "test_year": 2023,
+      "all_history_minus_two_year_auc": -0.002690648976936494,
+      "apparent_direction": "hurt",
+      "intervals_overlap": true,
+      "change_called_real": false
+    },
+    {
+      "test_year": 2024,
+      "all_history_minus_two_year_auc": 0.006137199714262409,
+      "apparent_direction": "helped",
+      "intervals_overlap": true,
+      "change_called_real": false
+    },
+    {
+      "test_year": 2025,
+      "all_history_minus_two_year_auc": 0.00802664423031596,
+      "apparent_direction": "helped",
+      "intervals_overlap": true,
+      "change_called_real": false
+    }
+  ]
+}

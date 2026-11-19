@@ -1,0 +1,727 @@
+{
+  "series": [
+    {
+      "feature": "Kickoff",
+      "test_year": 2012,
+      "weight": 0.14448072693366393
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2013,
+      "weight": 0.11224836467208983
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2014,
+      "weight": 0.10437070599108325
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2015,
+      "weight": 0.23677718015430368
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2016,
+      "weight": 0.07705758250999759
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2017,
+      "weight": 0.10445412295859295
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2018,
+      "weight": 0.1546576847609002
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2019,
+      "weight": 0.18553715967377343
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2020,
+      "weight": 0.2057375507203707
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2021,
+      "weight": 0.1689231149723984
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2022,
+      "weight": 0.3813498542580062
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2023,
+      "weight": 0.18485959292164428
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2024,
+      "weight": 0.12062841584148294
+    },
+    {
+      "feature": "Kickoff",
+      "test_year": 2025,
+      "weight": 0.07057828547030248
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2012,
+      "weight": 0.0673731445484511
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2013,
+      "weight": 0.1583456170709272
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2014,
+      "weight": 0.15669599341188806
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2015,
+      "weight": 0.009634656853857176
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2016,
+      "weight": 0.05251718022889194
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2017,
+      "weight": 0.010368067960461292
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2018,
+      "weight": 0.03480956533270522
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2019,
+      "weight": 0.023861862109387177
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2020,
+      "weight": 0.02939131539828067
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2021,
+      "weight": 0.02073177855693944
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2022,
+      "weight": -0.11074598004993504
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2023,
+      "weight": 0.016734023959252855
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2024,
+      "weight": -0.007412564576557252
+    },
+    {
+      "feature": "Punt",
+      "test_year": 2025,
+      "weight": 0.04506739419112244
+    },
+    {
+      "feature": "Run",
+      "test_year": 2012,
+      "weight": 0.12807322166779497
+    },
+    {
+      "feature": "Run",
+      "test_year": 2013,
+      "weight": 0.13281035314928122
+    },
+    {
+      "feature": "Run",
+      "test_year": 2014,
+      "weight": 0.07507651209632046
+    },
+    {
+      "feature": "Run",
+      "test_year": 2015,
+      "weight": 0.07779970624539224
+    },
+    {
+      "feature": "Run",
+      "test_year": 2016,
+      "weight": 0.08762382249705608
+    },
+    {
+      "feature": "Run",
+      "test_year": 2017,
+      "weight": 0.13755663857558048
+    },
+    {
+      "feature": "Run",
+      "test_year": 2018,
+      "weight": 0.1266992307080488
+    },
+    {
+      "feature": "Run",
+      "test_year": 2019,
+      "weight": 0.1236100993297852
+    },
+    {
+      "feature": "Run",
+      "test_year": 2020,
+      "weight": 0.1313848674700346
+    },
+    {
+      "feature": "Run",
+      "test_year": 2021,
+      "weight": 0.1419357101609625
+    },
+    {
+      "feature": "Run",
+      "test_year": 2022,
+      "weight": 0.1322224553336144
+    },
+    {
+      "feature": "Run",
+      "test_year": 2023,
+      "weight": 0.13839789762614974
+    },
+    {
+      "feature": "Run",
+      "test_year": 2024,
+      "weight": 0.0915076455091999
+    },
+    {
+      "feature": "Run",
+      "test_year": 2025,
+      "weight": 0.09542209449665344
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2012,
+      "weight": 0.09406586074546894
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2013,
+      "weight": 0.06601970832227218
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2014,
+      "weight": 0.02841483453976946
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2015,
+      "weight": 0.005195514920194549
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2016,
+      "weight": 0.05150036514584807
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2017,
+      "weight": 0.1035405877971242
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2018,
+      "weight": 0.10699934828317839
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2019,
+      "weight": 0.09628150686277767
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2020,
+      "weight": 0.1314655107215242
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2021,
+      "weight": 0.12374781835696586
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2022,
+      "weight": 0.10317054983122272
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2023,
+      "weight": 0.10110870747718119
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2024,
+      "weight": 0.0670502043008478
+    },
+    {
+      "feature": "Pass",
+      "test_year": 2025,
+      "weight": 0.0627430776250984
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2012,
+      "weight": -0.023611082287763836
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2013,
+      "weight": -0.023997915063776208
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2014,
+      "weight": -0.013564104109485105
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2015,
+      "weight": -0.00424651358710125
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2016,
+      "weight": -0.012182700055248527
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2017,
+      "weight": -0.0156005313205613
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2018,
+      "weight": 0.006796224219738178
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2019,
+      "weight": 0.012525916128214116
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2020,
+      "weight": 0.026723876909884803
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2021,
+      "weight": 0.008189556752711286
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2022,
+      "weight": 0.006949646303358419
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2023,
+      "weight": -0.004580910915518588
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2024,
+      "weight": -0.01721209400966101
+    },
+    {
+      "feature": "Turf",
+      "test_year": 2025,
+      "weight": -0.03126312893351959
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2012,
+      "weight": 0.03209286912766318
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2013,
+      "weight": -0.023628763472291554
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2014,
+      "weight": -0.08367086134467248
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2015,
+      "weight": -0.09005379246723064
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2016,
+      "weight": -0.1288633440790041
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2017,
+      "weight": -0.1010472197756259
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2018,
+      "weight": -0.11336098660969834
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2019,
+      "weight": -0.10113445098991039
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2020,
+      "weight": -0.04649856210770444
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2021,
+      "weight": -0.04274061181343413
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2022,
+      "weight": -0.02443769193664194
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2023,
+      "weight": -0.042320009876830926
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2024,
+      "weight": -0.039714678619468945
+    },
+    {
+      "feature": "Dome",
+      "test_year": 2025,
+      "weight": -0.04040421725733157
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2012,
+      "weight": -0.025496408579945066
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2013,
+      "weight": -0.010667036122380001
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2014,
+      "weight": -0.01560796956551956
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2015,
+      "weight": 0.00489821378074317
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2016,
+      "weight": -0.0009909879969458458
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2017,
+      "weight": -0.010500920524325887
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2018,
+      "weight": -0.018040159376912467
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2019,
+      "weight": -0.030848178787109104
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2020,
+      "weight": -0.03134842971882367
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2021,
+      "weight": -0.042468004798510324
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2022,
+      "weight": -0.04031643143577144
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2023,
+      "weight": -0.032474886436805905
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2024,
+      "weight": -0.029330972227224503
+    },
+    {
+      "feature": "Shotgun",
+      "test_year": 2025,
+      "weight": -0.027028179515167727
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2012,
+      "weight": 0.0048636594778085655
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2013,
+      "weight": -0.005539812383495767
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2014,
+      "weight": 0.009916336280135296
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2015,
+      "weight": 0.00631596763205944
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2016,
+      "weight": 0.009566488276354767
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2017,
+      "weight": -0.019654196857681907
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2018,
+      "weight": -0.0063061321357827105
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2019,
+      "weight": 0.003381617547291779
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2020,
+      "weight": 0.03087873141420824
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2021,
+      "weight": 0.033501162173417164
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2022,
+      "weight": 0.0030340634368788855
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2023,
+      "weight": -0.02070419497539499
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2024,
+      "weight": -0.05593979199644372
+    },
+    {
+      "feature": "Red zone",
+      "test_year": 2025,
+      "weight": -0.019381455278686805
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2012,
+      "weight": 0.0813349753011337
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2013,
+      "weight": 0.08173972533456599
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2014,
+      "weight": 0.05560220043234544
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2015,
+      "weight": 0.056999901395942985
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2016,
+      "weight": 0.04764780404952126
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2017,
+      "weight": 0.05557238889359357
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2018,
+      "weight": 0.060718242816499644
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2019,
+      "weight": 0.06708398474531582
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2020,
+      "weight": 0.09823152922859285
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2021,
+      "weight": 0.09159265828799526
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2022,
+      "weight": 0.09314242097241908
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2023,
+      "weight": 0.09350723812900652
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2024,
+      "weight": 0.09324360109308753
+    },
+    {
+      "feature": "Fourth quarter",
+      "test_year": 2025,
+      "weight": 0.09292161763753504
+    }
+  ],
+  "flags": [
+    {
+      "feature": "Kickoff",
+      "sign_flip": false,
+      "sign_flip_test_years": [],
+      "first_weight": 0.14448072693366393,
+      "latest_weight": 0.07057828547030248,
+      "latest_shrank_by_more_than_half": true
+    },
+    {
+      "feature": "Punt",
+      "sign_flip": true,
+      "sign_flip_test_years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "first_weight": 0.0673731445484511,
+      "latest_weight": 0.04506739419112244,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Run",
+      "sign_flip": false,
+      "sign_flip_test_years": [],
+      "first_weight": 0.12807322166779497,
+      "latest_weight": 0.09542209449665344,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Pass",
+      "sign_flip": false,
+      "sign_flip_test_years": [],
+      "first_weight": 0.09406586074546894,
+      "latest_weight": 0.0627430776250984,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Turf",
+      "sign_flip": true,
+      "sign_flip_test_years": [
+        2018,
+        2023
+      ],
+      "first_weight": -0.023611082287763836,
+      "latest_weight": -0.03126312893351959,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Dome",
+      "sign_flip": true,
+      "sign_flip_test_years": [
+        2013
+      ],
+      "first_weight": 0.03209286912766318,
+      "latest_weight": -0.04040421725733157,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Shotgun",
+      "sign_flip": true,
+      "sign_flip_test_years": [
+        2015,
+        2016
+      ],
+      "first_weight": -0.025496408579945066,
+      "latest_weight": -0.027028179515167727,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Red zone",
+      "sign_flip": true,
+      "sign_flip_test_years": [
+        2013,
+        2014,
+        2017,
+        2019,
+        2023
+      ],
+      "first_weight": 0.0048636594778085655,
+      "latest_weight": -0.019381455278686805,
+      "latest_shrank_by_more_than_half": false
+    },
+    {
+      "feature": "Fourth quarter",
+      "sign_flip": false,
+      "sign_flip_test_years": [],
+      "first_weight": 0.0813349753011337,
+      "latest_weight": 0.09292161763753504,
+      "latest_shrank_by_more_than_half": false
+    }
+  ]
+}

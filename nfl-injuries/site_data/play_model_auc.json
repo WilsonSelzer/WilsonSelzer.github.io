@@ -1,0 +1,176 @@
+{
+  "series": [
+    {
+      "train_start": 2009,
+      "train_end": 2011,
+      "test_year": 2012,
+      "roc_auc": 0.5838153928108769,
+      "roc_auc_ci_low": 0.5597938880676934,
+      "roc_auc_ci_high": 0.6064412530941582,
+      "pr_auc": 0.01674347814583301,
+      "test_base_rate": 0.013001521201749381
+    },
+    {
+      "train_start": 2010,
+      "train_end": 2012,
+      "test_year": 2013,
+      "roc_auc": 0.5612582790876022,
+      "roc_auc_ci_low": 0.5387172785987648,
+      "roc_auc_ci_high": 0.5832160899644259,
+      "pr_auc": 0.01863478159863735,
+      "test_base_rate": 0.01580321237918303
+    },
+    {
+      "train_start": 2011,
+      "train_end": 2013,
+      "test_year": 2014,
+      "roc_auc": 0.5840872306909788,
+      "roc_auc_ci_low": 0.5649157423064527,
+      "roc_auc_ci_high": 0.6058195032653549,
+      "pr_auc": 0.019322335432057074,
+      "test_base_rate": 0.015351087268895489
+    },
+    {
+      "train_start": 2012,
+      "train_end": 2014,
+      "test_year": 2015,
+      "roc_auc": 0.5841701741629092,
+      "roc_auc_ci_low": 0.5653969953211394,
+      "roc_auc_ci_high": 0.6054279511167916,
+      "pr_auc": 0.022577079428979234,
+      "test_base_rate": 0.018009884052461508
+    },
+    {
+      "train_start": 2013,
+      "train_end": 2015,
+      "test_year": 2016,
+      "roc_auc": 0.5991292618504489,
+      "roc_auc_ci_low": 0.5817136118455601,
+      "roc_auc_ci_high": 0.6222466209313152,
+      "pr_auc": 0.02404896159517061,
+      "test_base_rate": 0.018185738930419783
+    },
+    {
+      "train_start": 2014,
+      "train_end": 2016,
+      "test_year": 2017,
+      "roc_auc": 0.5964986768444934,
+      "roc_auc_ci_low": 0.5800215790434091,
+      "roc_auc_ci_high": 0.6147397362112935,
+      "pr_auc": 0.024729118276704293,
+      "test_base_rate": 0.019038656435500217
+    },
+    {
+      "train_start": 2015,
+      "train_end": 2017,
+      "test_year": 2018,
+      "roc_auc": 0.600789050058852,
+      "roc_auc_ci_low": 0.5792729371494841,
+      "roc_auc_ci_high": 0.6203704207920793,
+      "pr_auc": 0.0238965669416676,
+      "test_base_rate": 0.017390246868539464
+    },
+    {
+      "train_start": 2016,
+      "train_end": 2018,
+      "test_year": 2019,
+      "roc_auc": 0.6138361245597003,
+      "roc_auc_ci_low": 0.5978245920909573,
+      "roc_auc_ci_high": 0.6306221376358095,
+      "pr_auc": 0.024196220629060624,
+      "test_base_rate": 0.018155375106047752
+    },
+    {
+      "train_start": 2017,
+      "train_end": 2019,
+      "test_year": 2020,
+      "roc_auc": 0.6155683629624676,
+      "roc_auc_ci_low": 0.5957145127999467,
+      "roc_auc_ci_high": 0.6295613633781254,
+      "pr_auc": 0.026539567205448998,
+      "test_base_rate": 0.019056671022929784
+    },
+    {
+      "train_start": 2018,
+      "train_end": 2020,
+      "test_year": 2021,
+      "roc_auc": 0.595330974245878,
+      "roc_auc_ci_low": 0.5769550199251494,
+      "roc_auc_ci_high": 0.6107047408937841,
+      "pr_auc": 0.027477265213391153,
+      "test_base_rate": 0.020734272128749086
+    },
+    {
+      "train_start": 2019,
+      "train_end": 2021,
+      "test_year": 2022,
+      "roc_auc": 0.6049490276233045,
+      "roc_auc_ci_low": 0.5894731579142322,
+      "roc_auc_ci_high": 0.6239744374452816,
+      "pr_auc": 0.02742222411015411,
+      "test_base_rate": 0.019897747685505042
+    },
+    {
+      "train_start": 2020,
+      "train_end": 2022,
+      "test_year": 2023,
+      "roc_auc": 0.6057418965549985,
+      "roc_auc_ci_low": 0.5929423176298952,
+      "roc_auc_ci_high": 0.6231008016460675,
+      "pr_auc": 0.029143513396438437,
+      "test_base_rate": 0.02159970681203903
+    },
+    {
+      "train_start": 2021,
+      "train_end": 2023,
+      "test_year": 2024,
+      "roc_auc": 0.6095177777248484,
+      "roc_auc_ci_low": 0.5932438738773493,
+      "roc_auc_ci_high": 0.6262055032328094,
+      "pr_auc": 0.02605267028846104,
+      "test_base_rate": 0.018951519369055904
+    },
+    {
+      "train_start": 2022,
+      "train_end": 2024,
+      "test_year": 2025,
+      "roc_auc": 0.5925425302768567,
+      "roc_auc_ci_low": 0.5744012788971042,
+      "roc_auc_ci_high": 0.6083035103118913,
+      "pr_auc": 0.02776119460407731,
+      "test_base_rate": 0.02152430580006103
+    }
+  ],
+  "named_year_changes": [
+    {
+      "comparison": "after_2018",
+      "before_year": 2018,
+      "after_year": 2019,
+      "auc_before": 0.600789050058852,
+      "auc_after": 0.6138361245597003,
+      "difference": 0.013047074500848299,
+      "intervals_overlap": true,
+      "change_called_real": false
+    },
+    {
+      "comparison": "after_2020",
+      "before_year": 2020,
+      "after_year": 2021,
+      "auc_before": 0.6155683629624676,
+      "auc_after": 0.595330974245878,
+      "difference": -0.020237388716589644,
+      "intervals_overlap": true,
+      "change_called_real": false
+    },
+    {
+      "comparison": "after_2024",
+      "before_year": 2024,
+      "after_year": 2025,
+      "auc_before": 0.6095177777248484,
+      "auc_after": 0.5925425302768567,
+      "difference": -0.016975247447991726,
+      "intervals_overlap": true,
+      "change_called_real": false
+    }
+  ]
+}
