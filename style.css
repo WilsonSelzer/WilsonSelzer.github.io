@@ -97,3 +97,5 @@ footer { border-top: 1px solid var(--rule); margin-top: 40px; padding: 28px 40px
 .card .links a { color: var(--ink); text-underline-offset: 3px; }
 .card .links span { color: var(--muted); }
 @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .about { padding-top: 40px; } }
+.card .result { font-size: 16px; color: var(--ink); border-left: 2px solid var(--ink); padding: 2px 0 2px 12px; margin: 0 0 14px; }
+.card .result b { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; color: var(--muted); margin-bottom: 2px; }
