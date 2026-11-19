@@ -16,160 +16,70 @@
   <nav class="nav" aria-label="Site">
     <a href="./" aria-current="page">Home</a>
     <a href="#projects">Projects</a>
-    <a href="kc/">KC Target Finder</a>
+    <a href="#about">About</a>
     <a class="out" href="https://github.com/WilsonSelzer">GitHub ↗</a>
   </nav>
 </header>
 
 <main class="wrap">
-  <section class="hero">
-    <div>
-      <h1>Where does AI actually save a business time and money, and where doesn't it?</h1>
-      <p>I played five years of Division I football at Cornell and graduated in economics in December 2025. During two internships at Epiq, I met with every business unit to find where AI could replace work, then presented the use cases to the C-suite.</p>
-      <p>After graduating, I consulted for a PE-backed senior care roll-up and built the data platform its deal team used to find acquisition targets. What I learned: the hard part is rarely the AI. It's picking the right problem, getting clean data, and getting people to actually use what you build.</p>
-      <p>Below are the projects I've built since, including <a href="kc/">a live tool anyone can try</a>.</p>
-    </div>
-    <div>
-      <a class="frame" href="kc/" aria-label="KC Roll-Up Target Finder"><img src="kc-tool.jpg" alt="KC Roll-Up Target Finder map of HVAC and plumbing businesses around Overland Park" width="1200" height="688"></a>
-      <div class="caption">kc roll-up target finder · live</div>
+  <section class="about" id="about">
+    <h1>Hi, I'm Wilson.</h1>
+    <p>I'm from Kansas City, played five years of Division I football at Cornell, and graduated with an economics degree in December 2025. I live in New York now.</p>
+    <p>I got into AI during two internships at Epiq, where I met with each business unit to find work AI could take over and pitched what I found to the C-suite. Since then I've been building: a data platform for a PE-backed senior care company, tools for its chairman, and a few projects of my own. I build everything with AI coding tools, and lately I spend a lot of time teaching other people to use them too.</p>
+    <p class="q">The question I keep coming back to: where does AI actually save a business time and money, and where doesn't it?</p>
+  </section>
+
+  <section class="section" id="projects">
+    <p class="eyebrow">Projects</p>
+    <div class="grid">
+      <article class="card">
+        <a class="frame" href="kc-sba-loan-map/"><img src="kc-tool.jpg" alt="KC Roll-Up Target Finder map" width="1200" height="688"></a>
+        <div class="tag">Live tool · Public data</div>
+        <h3><a href="kc-sba-loan-map/">KC Roll-Up Target Finder</a></h3>
+        <p>Drop a platform company on a map of Kansas City and get every independent business nearby as an add-on target list. Refreshes monthly.</p>
+        <div class="links"><a href="kc-sba-loan-map/">Open the tool</a><a href="kc/">The story</a><a href="https://github.com/WilsonSelzer/kc-sba-loan-map">Code</a></div>
+      </article>
+
+      <article class="card">
+        <a class="frame" href="nfl-injuries/"><img src="nfl-tool.jpg" alt="NFL injury analysis home page" width="1400" height="880"></a>
+        <div class="tag">Interactive analysis · Machine learning</div>
+        <h3><a href="nfl-injuries/">Which NFL plays end in an injury?</a></h3>
+        <p>A model trained on about 717,000 plays from 2009 to 2025. Build any play and see how risky it is, or read what held up and what didn't.</p>
+        <div class="links"><a href="nfl-injuries/">Open the analysis</a></div>
+      </article>
+
+      <article class="card">
+        <div class="tag">Client work · Private</div>
+        <h3>Operator data platform for a PE deal team</h3>
+        <p>Pulled 15,000+ senior living operators and 7,000 hospices from public registries into one CRM, with a monthly feed of hospice openings, closures and ownership changes.</p>
+        <div class="links"><a href="kc/">See the public rebuild</a></div>
+      </article>
+
+      <article class="card">
+        <div class="tag">Client work · Private</div>
+        <h3>One portal for the chairman's AI tools</h3>
+        <p>The chairman had built four tools on his own that only he could run. I combined them into one app his whole team uses.</p>
+        <div class="links"><span>Private</span></div>
+      </article>
+
+      <article class="card">
+        <div class="tag">Personal build · Running daily</div>
+        <h3>Autonomous networking agent</h3>
+        <p>Finds people, writes personal outreach and checks it never emails anyone twice. It booked 60 calls in its first month.</p>
+        <div class="links"><span>Private</span></div>
+      </article>
+
+      <article class="card">
+        <div class="tag">Personal build · Scraping</div>
+        <h3>Where former college football players work</h3>
+        <p>Scraped ten years of rosters from 24 programs (9,069 players) and found the 443 alumni working in New York finance, consulting and tech.</p>
+        <div class="links"><span>Private, names not shared</span></div>
+      </article>
     </div>
   </section>
-  <div class="skip"><a href="#projects">Skip to projects →</a></div>
-</main>
-
-<section class="band">
-  <div class="wrap">
-    <div class="tabs" role="tablist" style="--n:3">
-      <button role="tab" aria-selected="true" aria-controls="t1" id="b1">At a glance</button>
-      <button role="tab" aria-selected="false" aria-controls="t2" id="b2">How I work</button>
-      <button role="tab" aria-selected="false" aria-controls="t3" id="b3">Tools I use</button>
-    </div>
-    <div class="panel" id="t1" role="tabpanel" aria-labelledby="b1">
-      <p>Everything here was built since graduating, with AI coding tools (Claude, Cursor, Grok) on real or public data. Client data is never shown; the KC tool is a public rebuild of client work so it can be shared.</p>
-      <div class="stats">
-        <div class="stat"><b>9,860</b><span>Businesses mapped</span><small>KC roll-up target finder</small></div>
-        <div class="stat"><b>15,000+</b><span>Operators unified</span><small>PE deal team data platform</small></div>
-        <div class="stat"><b>60</b><span>Calls booked</span><small>By my networking agent, first month</small></div>
-        <div class="stat"><b>4</b><span>Public data sources</span><small>Combined, refreshed monthly</small></div>
-      </div>
-    </div>
-    <div class="panel" id="t2" role="tabpanel" aria-labelledby="b2" hidden>
-      <ol>
-        <li><b>Find the use case.</b> Sit with the people doing the work and find where AI or data can replace it, and where it can't.</li>
-        <li><b>Build it.</b> Ship a working tool on real data, not a deck about one.</li>
-        <li><b>Get it adopted.</b> Put it in front of the people who'll use it, train them, and keep what they actually use.</li>
-      </ol>
-    </div>
-    <div class="panel" id="t3" role="tabpanel" aria-labelledby="b3" hidden>
-      <ul>
-        <li><b>AI and agents:</b> Claude, Claude Code, Cursor, Grok, ChatGPT, Copilot</li>
-        <li><b>Data:</b> Python, SQL, HubSpot API, Apollo, Clay, Excel</li>
-        <li><b>Shipping:</b> GitHub Actions for scheduled jobs, GitHub Pages, Streamlit</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<div class="cta"><a class="btn" href="kc/">See the live example</a></div>
-
-<main class="wrap section" id="projects">
-  <p class="eyebrow">Projects since graduating</p>
-
-  <article class="project">
-    <div class="meta">Live tool<br>Public data<br>2026</div>
-    <div>
-      <h3>KC Roll-Up Target Finder</h3>
-      <p>A deal-sourcing tool for roll-up private equity. Pick an industry, drop your platform company on the map, and get every independent Kansas City business nearby as an add-on target list, with a profile for each one.</p>
-      <ul>
-        <li>9,860 businesses across 13 roll-up categories, with phone, website, years in business, retirement-plan headcount, SBA loan history and whether a PE-backed platform already owns it.</li>
-        <li>Combines Overture Maps, SBA loan data, company websites and DOL Form 5500 filings, refreshed monthly by a scheduled job. Exports a formatted Excel list.</li>
-      </ul>
-      <div class="links"><a href="kc/">Read the story</a><a href="kc-sba-loan-map/">Open the tool</a><a href="https://github.com/WilsonSelzer/kc-sba-loan-map">Code</a></div>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Client work<br>PE-backed senior care<br>2026</div>
-    <div>
-      <h3>Operator intelligence platform for a PE deal team</h3>
-      <p>The investment team had stale CRM data and no single view of the senior living and hospice operators it wanted to buy or partner with.</p>
-      <ul>
-        <li>Unified 15,000+ senior living operators and about 7,000 hospices from NIC, CMS, NPI and PECOS data into HubSpot as the system of record.</li>
-        <li>Sourced 8,500 contacts with 4,500 verified emails, and deduplicated about 22,100 company records down to 20,150.</li>
-        <li>Built a monthly pipeline flagging hospice ownership changes, openings and closures, plus a team-wide market map on the HubSpot API.</li>
-      </ul>
-      <div class="note">Client data isn't shown. The KC tool is a public rebuild of this map and pipeline.</div>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Client work<br>For the chairman<br>2026</div>
-    <div>
-      <h3>One shared portal for the chairman's AI-built tools</h3>
-      <p>The chairman had built four standalone intelligence tools on his own, and only he could run them.</p>
-      <ul>
-        <li>Consolidated them into one password-protected Streamlit app his whole team could use.</li>
-        <li>Designed a document-upload flow to replace pasting licenses into ChatGPT to look up CMS records.</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Personal build<br>Running daily<br>2026</div>
-    <div>
-      <h3>Autonomous networking agent</h3>
-      <p>I wanted to run a networking campaign at a scale I couldn't manage by hand.</p>
-      <ul>
-        <li>Sources contacts, drafts personalized outreach and sends about 50 emails a day. It booked 60 calls in its first month with people at firms including Goldman Sachs, BlackRock and JPMorgan.</li>
-        <li>After spotting a gap, I added checks against sent mail and past conversations so it never contacts anyone twice.</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Personal build<br>Data scraping<br>2026</div>
-    <div>
-      <h3>Mapping where former college football players work in New York</h3>
-      <p>I wanted a warm network for my job search, built from the one group most likely to answer: former players.</p>
-      <ul>
-        <li>Scraped ten seasons (2016 to 2025) of rosters from 24 programs across the Ivy League, Patriot League and academic Power 4 schools: 9,069 unique players, about 7,000 of them alumni.</li>
-        <li>Looked up where each alum works now and found 443 in finance, consulting and tech in the New York area, organized into an Excel tracker for outreach.</li>
-      </ul>
-      <div class="note">Names aren't shown. Only aggregate numbers are public.</div>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Public build<br>Machine learning<br>2026</div>
-    <div>
-      <h3>Which NFL plays end in an injury, and which don't?</h3>
-      <p>An interactive analysis of about 717,000 NFL plays from 2009 to 2025, built to learn applied machine learning on a game I played for five years. Build any play and the model scores it live in the browser.</p>
-      <ul>
-        <li>About 40% of serious kickoff injuries are head injuries, versus 15% on other plays. Offensive linemen's injuries are more often serious, and re-injury risk runs 1.3 to 1.5 times higher.</li>
-        <li>Pre-registered the comparisons and reported the nulls too: Thursday games, turf, short rest, cold and rookie status showed no effect. Public play data caught only 5 of the 35 kickoff concussions the NFL reported in 2025.</li>
-      </ul>
-      <div class="links"><a href="nfl-injuries/">Open the analysis</a></div>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="meta">Public build<br>CMS data<br>2026</div>
-    <div>
-      <h3>Hospice Watch</h3>
-      <p>An automated tracker for the US hospice market on free CMS data that flags new hospices, exits and ownership changes each month.</p>
-    </div>
-  </article>
 </main>
 
 <footer><span>Wilson Selzer · New York</span><span>selzerwilson@gmail.com</span></footer>
 
-<script>
-document.querySelectorAll('.tabs').forEach(tl => {
-  const tabs = [...tl.querySelectorAll('[role=tab]')];
-  tabs.forEach(t => t.addEventListener('click', () => {
-    tabs.forEach(x => { x.setAttribute('aria-selected', x === t); document.getElementById(x.getAttribute('aria-controls')).hidden = x !== t; });
-  }));
-});
-</script>
 </body>
 </html>
