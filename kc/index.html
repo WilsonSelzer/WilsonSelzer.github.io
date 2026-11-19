@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KC Roll-Up Target Finder</title>
+<meta name="description" content="Which Kansas City small businesses are ready to sell, and who is already buying them? A deal-sourcing tool built on free public data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./">KC Roll-Up Target Finder</a>
+  <nav class="nav" aria-label="Project">
+    <a href="./" aria-current="page">Home</a>
+    <a href="../kc-sba-loan-map/">Open the tool</a>
+    <a href="#findings">Findings and process</a>
+    <a href="../">All projects</a>
+    <a class="out" href="https://github.com/WilsonSelzer/kc-sba-loan-map">GitHub ↗</a>
+    <a class="out" href="https://data.sba.gov/dataset/7a-504-foia">SBA data ↗</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Which Kansas City small businesses are ready to sell, and who's already buying them?</h1>
+      <p>I went to high school in Kansas City. In 2026 I built acquisition-target data for a PE-backed senior care roll-up, and saw how much of a deal team's week goes into simply finding businesses and guessing which owners might sell.</p>
+      <p>Most of that information is public. It's just scattered across government loan records, map listings, company websites and federal filings. That led me to a simple question: <a href="../kc-sba-loan-map/">using only free public data, how close can you get to a target list a PE firm would actually use?</a></p>
+      <p>The result maps every independent business in 13 common roll-up industries around Kansas City, flags the owners most likely to sell, shows which ones a platform already owns, and refreshes itself every month.</p>
+    </div>
+    <div>
+      <a class="frame" href="../kc-sba-loan-map/" aria-label="Open the tool"><img src="kc-tool.jpg" alt="The tool: HVAC and plumbing businesses within 25 miles of an Overland Park platform" width="1200" height="688"></a>
+      <div class="caption">hvac &amp; plumbing · 25 mi from overland park</div>
+    </div>
+  </section>
+  <div class="skip"><a href="#findings">Skip to findings →</a></div>
+</main>
+
+<section class="band" id="findings">
+  <div class="wrap">
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="t1" id="b1">The data</button>
+      <button role="tab" aria-selected="false" aria-controls="t2" id="b2">What I found</button>
+      <button role="tab" aria-selected="false" aria-controls="t3" id="b3">How it works</button>
+      <button role="tab" aria-selected="false" aria-controls="t4" id="b4">Limitations</button>
+    </div>
+    <div class="panel" id="t1" role="tabpanel" aria-labelledby="b1">
+      <p>Every business comes from <a href="https://overturemaps.org">Overture Maps</a>, an open directory backed by Amazon, Meta and Microsoft. Each one is enriched with SBA 7(a) and 504 loan history since 2010, details read from its own website, and retirement-plan headcounts from Department of Labor Form 5500 filings. Franchises and chains are removed, since roll-ups buy independents.</p>
+      <div class="stats">
+        <div class="stat"><b>9,860</b><span>Independent businesses</span><small>13 roll-up industries · 14 counties</small></div>
+        <div class="stat"><b>6,256</b><span>SBA loans in the data</span><small>FY2010 to Sept 2026</small></div>
+        <div class="stat"><b>86%</b><span>With a phone number</span><small>Free contact data, no paid tools</small></div>
+        <div class="stat"><b>6,184</b><span>Business profiles</span><small>Website, age, headcount, ownership</small></div>
+      </div>
+    </div>
+    <div class="panel" id="t2" role="tabpanel" aria-labelledby="b2" hidden>
+      <ol>
+        <li><b>Consolidation is already underway in vet care.</b> About 1 in 10 Kansas City vet clinics' websites name a PE-backed platform: Mission Pet Health (16 clinics), National Veterinary Associates (10) and Thrive Pet Healthcare (4).</li>
+        <li><b>Deal sizes have doubled.</b> The median SBA loan used to buy a KC business rose from $479,000 in FY2019 to $1.0 million in FY2026, with 58 purchases financed in FY2026 alone.</li>
+        <li><b>Dental is ripe for succession deals.</b> Of the 119 KC dental offices with SBA loans, 73 first borrowed 10 or more years ago, a rough sign the owner is further along in their career.</li>
+        <li><b>Hundreds of owners have been at it for decades.</b> 707 businesses say on their websites they've operated since 1996 or earlier.</li>
+        <li><b>Auto repair is the most fragmented market.</b> 2,150 independent shops and car washes, with 21 bought by new owners using SBA loans since 2018.</li>
+      </ol>
+    </div>
+    <div class="panel" id="t3" role="tabpanel" aria-labelledby="b3" hidden>
+      <ol>
+        <li><b>Collect.</b> A scheduled GitHub job runs every month. It pulls Overture's business listings for the metro and checks SBA's site for a new quarterly loan file.</li>
+        <li><b>Clean.</b> It sorts businesses into 13 categories, removes franchises and closed listings, merges duplicate locations, and matches listings to SBA borrowers by name and location.</li>
+        <li><b>Enrich.</b> It visits each business's website for founding year, family ownership, hiring and any mention of a parent platform; looks up when the website domain was registered; and matches Form 5500 filings for headcount.</li>
+        <li><b>Serve.</b> The map, the business profiles and the Excel export all read from the refreshed files, so the tool stays current with no manual work.</li>
+      </ol>
+    </div>
+    <div class="panel" id="t4" role="tabpanel" aria-labelledby="b4" hidden>
+      <p>This reflects public data as published. Map listings can be out of date, websites can overstate their history, and SBA records only cover businesses that borrowed through SBA programs. "Long-time owner" and "years in business" are rough signals, not owner ages. The ownership flag only catches platforms a website names, so it will miss quiet acquisitions. Revenue isn't public for private companies; headcount only exists for businesses that file a Form 5500.</p>
+      <p>The point isn't a perfect list. It's to show how much of a sourcing team's first pass can be automated from free data, so people can spend their time on calls instead of spreadsheets.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta"><a class="btn" href="../kc-sba-loan-map/">Open the tool</a></div>
+
+<footer><span>Built by <a href="../">Wilson Selzer</a></span><span>Sources: Overture Maps (CDLA-Permissive-2.0), SBA, DOL</span></footer>
+
+<script>
+document.querySelectorAll('.tabs').forEach(tl => {
+  const tabs = [...tl.querySelectorAll('[role=tab]')];
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => { x.setAttribute('aria-selected', x === t); document.getElementById(x.getAttribute('aria-controls')).hidden = x !== t; });
+  }));
+});
+</script>
+</body>
+</html>

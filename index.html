@@ -7,199 +7,155 @@
 <meta name="description" content="Wilson Selzer: AI and data projects built since graduating, including a live roll-up target finder for private equity.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  /* Layout: a one-page project index. Featured live tool up top, then project rows with a meta column. */
-  --bg: #f3f4f6; --surface: #ffffff; --ink: #15202e; --muted: #5a6575; --rule: #d9dde3;
-  --accent: #d9480f; --accent-soft: #fff4ee; --base: #1f5fbf;
-  --display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif;
-  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #0f141b; --surface: #161d27; --ink: #e7ebf0; --muted: #9aa5b4; --rule: #2a3442; --accent: #ff8a5c; --accent-soft: #2a1d17; --base: #7fb0ff; color-scheme: dark; }
-}
-* { box-sizing: border-box; }
-html, body { margin: 0; }
-body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; }
-.wrap { max-width: 1000px; margin: 0 auto; padding: 56px 24px 72px; }
-header { display: grid; gap: 12px; padding-bottom: 28px; border-bottom: 2px solid var(--ink); }
-.kicker { font-family: var(--mono); font-size: 13px; color: var(--muted); }
-h1 { font-family: var(--display); font-weight: 600; font-size: clamp(40px, 6vw, 58px); line-height: 1; margin: 0; }
-.lede { font-size: 19px; max-width: 62ch; margin: 0; }
-.contact { font-family: var(--mono); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 20px; }
-.contact a { color: var(--base); }
-.approach { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 28px 0 0; }
-.approach div { background: var(--surface); padding: 14px 16px; }
-.approach b { display: block; font-family: var(--display); font-size: 18px; font-weight: 600; }
-.approach span { font-size: 14px; color: var(--muted); }
-h2 { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 52px 0 14px; }
-.featured { background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--accent); display: grid; grid-template-columns: 1fr; }
-.featured > a { display: block; border-bottom: 1px solid var(--rule); }
-.featured img { width: 100%; height: auto; display: block; }
-.featured .body { padding: 22px 24px; display: grid; gap: 10px; align-content: start; max-width: 760px; }
-.tag { display: inline-block; font-family: var(--mono); font-size: 11.5px; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 3px; justify-self: start; }
-h3 { font-family: var(--display); font-weight: 600; font-size: 26px; line-height: 1.1; margin: 0; text-wrap: balance; }
-.featured p, .project p { margin: 0; }
-.featured ul { margin: 0; padding-left: 18px; font-size: 15px; }
-.featured li { margin-bottom: 4px; }
-.figs { display: flex; flex-wrap: wrap; gap: 8px; }
-.fig { border: 1px solid var(--rule); border-left: 3px solid var(--accent); padding: 6px 10px; }
-.fig b { display: block; font-family: var(--display); font-size: 20px; line-height: 1.1; font-variant-numeric: tabular-nums; }
-.fig span { font-size: 12px; color: var(--muted); }
-.ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-.btn { display: inline-block; font: 500 14px var(--body); text-decoration: none; padding: 9px 14px; border-radius: 6px; }
-.btn.primary { background: var(--ink); color: var(--bg); }
-.btn.ghost { border: 1px solid var(--rule); color: var(--ink); }
-.btn:focus-visible, a:focus-visible { outline: 2px solid var(--base); outline-offset: 2px; }
-.project { display: grid; grid-template-columns: 200px 1fr; gap: 26px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
-.meta { display: grid; gap: 6px; align-content: start; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
-.project h3 { font-size: 22px; margin-bottom: 6px; }
-.project .sub { color: var(--muted); max-width: 65ch; margin-bottom: 8px; }
-.project ul { margin: 0; padding-left: 18px; max-width: 65ch; }
-.project li { margin-bottom: 5px; }
-.tools { display: flex; flex-wrap: wrap; gap: 5px; }
-.tools span { border: 1px solid var(--rule); padding: 0 6px; border-radius: 3px; background: var(--surface); }
-.note { font-size: 13.5px; color: var(--muted); }
-.earlier { font-size: 15px; color: var(--muted); max-width: 70ch; }
-footer { margin-top: 40px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
-@media (max-width: 760px) {
-  .featured { grid-template-columns: 1fr; }
-  .project { grid-template-columns: 1fr; gap: 10px; }
-  .approach { grid-template-columns: 1fr; }
-  .wrap { padding-top: 36px; }
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="kicker">New York · Cornell Economics, December 2025</div>
-    <h1>Wilson Selzer</h1>
-    <p class="lede">I find where AI fits in a business, build the tool that proves it, and get people using it. These are the projects I've built since graduating.</p>
-    <div class="contact"><span>selzerwilson@gmail.com</span><a href="https://github.com/WilsonSelzer">github.com/WilsonSelzer</a></div>
-  </header>
+<header class="topbar">
+  <a class="brand" href="./">Wilson Selzer</a>
+  <nav class="nav" aria-label="Site">
+    <a href="./" aria-current="page">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="kc/">KC Target Finder</a>
+    <a class="out" href="https://github.com/WilsonSelzer">GitHub ↗</a>
+  </nav>
+</header>
 
-  <div class="approach" aria-label="How I work">
-    <div><b>Find the use case</b><span>Sit with the people doing the work and find where AI or data can replace it.</span></div>
-    <div><b>Build it</b><span>Ship a working tool on real data, not a deck about one.</span></div>
-    <div><b>Get it adopted</b><span>Put it in front of the people who'll use it and keep what they actually use.</span></div>
-  </div>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Where does AI actually save a business time and money, and where doesn't it?</h1>
+      <p>I played five years of Division I football at Cornell and graduated in economics in December 2025. During two internships at Epiq, I met with every business unit to find where AI could replace work, then presented the use cases to the C-suite.</p>
+      <p>After graduating, I consulted for a PE-backed senior care roll-up and built the data platform its deal team used to find acquisition targets. What I learned: the hard part is rarely the AI. It's picking the right problem, getting clean data, and getting people to actually use what you build.</p>
+      <p>Below are the projects I've built since, including <a href="kc/">a live tool anyone can try</a>.</p>
+    </div>
+    <div>
+      <a class="frame" href="kc/" aria-label="KC Roll-Up Target Finder"><img src="kc-tool.jpg" alt="KC Roll-Up Target Finder map of HVAC and plumbing businesses around Overland Park" width="1200" height="688"></a>
+      <div class="caption">kc roll-up target finder · live</div>
+    </div>
+  </section>
+  <div class="skip"><a href="#projects">Skip to projects →</a></div>
+</main>
 
-  <h2>Live example</h2>
-  <article class="featured">
-    <a href="https://wilsonselzer.github.io/kc-sba-loan-map/" aria-label="Open the KC Roll-Up Target Finder"><img src="kc-tool.jpg" alt="KC Roll-Up Target Finder showing HVAC and plumbing businesses within 25 miles of Overland Park" width="1200" height="688"></a>
-    <div class="body">
-      <span class="tag">Try it · public data</span>
-      <h3>KC Roll-Up Target Finder</h3>
-      <p>A deal-sourcing tool for roll-up private equity. Pick an industry, drop your platform company on the map, and get every independent business nearby as an add-on target list.</p>
-      <div class="figs">
-        <div class="fig"><b>9,000+</b><span>KC businesses</span></div>
-        <div class="fig"><b>13</b><span>roll-up categories</span></div>
-        <div class="fig"><b>Monthly</b><span>auto-refresh</span></div>
+<section class="band">
+  <div class="wrap">
+    <div class="tabs" role="tablist" style="--n:3">
+      <button role="tab" aria-selected="true" aria-controls="t1" id="b1">At a glance</button>
+      <button role="tab" aria-selected="false" aria-controls="t2" id="b2">How I work</button>
+      <button role="tab" aria-selected="false" aria-controls="t3" id="b3">Tools I use</button>
+    </div>
+    <div class="panel" id="t1" role="tabpanel" aria-labelledby="b1">
+      <p>Everything here was built since graduating, with AI coding tools (Claude, Cursor, Grok) on real or public data. Client data is never shown; the KC tool is a public rebuild of client work so it can be shared.</p>
+      <div class="stats">
+        <div class="stat"><b>9,860</b><span>Businesses mapped</span><small>KC roll-up target finder</small></div>
+        <div class="stat"><b>15,000+</b><span>Operators unified</span><small>PE deal team data platform</small></div>
+        <div class="stat"><b>30+</b><span>Calls booked</span><small>By my networking agent</small></div>
+        <div class="stat"><b>4</b><span>Public data sources</span><small>Combined, refreshed monthly</small></div>
       </div>
+    </div>
+    <div class="panel" id="t2" role="tabpanel" aria-labelledby="b2" hidden>
+      <ol>
+        <li><b>Find the use case.</b> Sit with the people doing the work and find where AI or data can replace it, and where it can't.</li>
+        <li><b>Build it.</b> Ship a working tool on real data, not a deck about one.</li>
+        <li><b>Get it adopted.</b> Put it in front of the people who'll use it, train them, and keep what they actually use.</li>
+      </ol>
+    </div>
+    <div class="panel" id="t3" role="tabpanel" aria-labelledby="b3" hidden>
       <ul>
-        <li>Each business gets a profile: phone, website, years in business, retirement-plan headcount, SBA loan history, and whether it already belongs to a PE-backed platform.</li>
-        <li>Combines four free sources (Overture Maps, SBA loan data, company websites, DOL Form 5500 filings), refreshed by a scheduled GitHub job.</li>
-        <li>Exports a formatted Excel target list.</li>
+        <li><b>AI and agents:</b> Claude, Claude Code, Cursor, Grok, ChatGPT, Copilot</li>
+        <li><b>Data:</b> Python, SQL, HubSpot API, Apollo, Clay, Excel</li>
+        <li><b>Shipping:</b> GitHub Actions for scheduled jobs, GitHub Pages, Streamlit</li>
       </ul>
-      <div class="ctas">
-        <a class="btn primary" href="https://wilsonselzer.github.io/kc-sba-loan-map/">Open the tool</a>
-        <a class="btn ghost" href="https://github.com/WilsonSelzer/kc-sba-loan-map">How it's built</a>
-      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta"><a class="btn" href="kc/">See the live example</a></div>
+
+<main class="wrap section" id="projects">
+  <p class="eyebrow">Projects since graduating</p>
+
+  <article class="project">
+    <div class="meta">Live tool<br>Public data<br>2026</div>
+    <div>
+      <h3>KC Roll-Up Target Finder</h3>
+      <p>A deal-sourcing tool for roll-up private equity. Pick an industry, drop your platform company on the map, and get every independent Kansas City business nearby as an add-on target list, with a profile for each one.</p>
+      <ul>
+        <li>9,860 businesses across 13 roll-up categories, with phone, website, years in business, retirement-plan headcount, SBA loan history and whether a PE-backed platform already owns it.</li>
+        <li>Combines Overture Maps, SBA loan data, company websites and DOL Form 5500 filings, refreshed monthly by a scheduled job. Exports a formatted Excel list.</li>
+      </ul>
+      <div class="links"><a href="kc/">Read the story</a><a href="kc-sba-loan-map/">Open the tool</a><a href="https://github.com/WilsonSelzer/kc-sba-loan-map">Code</a></div>
     </div>
   </article>
 
-  <h2>Projects</h2>
-
   <article class="project">
-    <div class="meta">
-      <div>Serviam Enterprise Holdings</div>
-      <div>PE-backed senior care roll-up</div>
-      <div>2026 · Consultant</div>
-      <div class="tools"><span>HubSpot API</span><span>Python</span><span>Claude</span><span>Cursor</span><span>CMS data</span></div>
-    </div>
+    <div class="meta">Client work<br>PE-backed senior care<br>2026</div>
     <div>
       <h3>Operator intelligence platform for a PE deal team</h3>
-      <p class="sub">The investment team had stale CRM data and no single view of the senior living and hospice operators it wanted to buy or partner with.</p>
+      <p>The investment team had stale CRM data and no single view of the senior living and hospice operators it wanted to buy or partner with.</p>
       <ul>
         <li>Unified 15,000+ senior living operators and about 7,000 hospices from NIC, CMS, NPI and PECOS data into HubSpot as the system of record.</li>
         <li>Sourced 8,500 contacts with 4,500 verified emails, and deduplicated about 22,100 company records down to 20,150.</li>
-        <li>Built a monthly pipeline flagging hospice ownership changes, openings and closures, plus a team-wide interactive market map on the HubSpot API.</li>
+        <li>Built a monthly pipeline flagging hospice ownership changes, openings and closures, plus a team-wide market map on the HubSpot API.</li>
       </ul>
-      <p class="note" style="margin-top:8px">Client data isn't shown. The live example above is a public rebuild of this map and pipeline.</p>
+      <div class="note">Client data isn't shown. The KC tool is a public rebuild of this map and pipeline.</div>
     </div>
   </article>
 
   <article class="project">
-    <div class="meta">
-      <div>Serviam · for the Chairman</div>
-      <div>2026</div>
-      <div class="tools"><span>Streamlit</span><span>Python</span></div>
-    </div>
+    <div class="meta">Client work<br>For the chairman<br>2026</div>
     <div>
-      <h3>One shared portal for the Chairman's AI-built tools</h3>
-      <p class="sub">The Chairman had built four standalone intelligence tools (hospice portals for three markets and a pharmacy tool), and only he could run them.</p>
+      <h3>One shared portal for the chairman's AI-built tools</h3>
+      <p>The chairman had built four standalone intelligence tools on his own, and only he could run them.</p>
       <ul>
-        <li>Consolidated them into one password-protected Streamlit app so his whole team could use them.</li>
+        <li>Consolidated them into one password-protected Streamlit app his whole team could use.</li>
         <li>Designed a document-upload flow to replace pasting licenses into ChatGPT to look up CMS records.</li>
       </ul>
     </div>
   </article>
 
   <article class="project">
-    <div class="meta">
-      <div>Personal build</div>
-      <div>2026 · Running daily</div>
-      <div class="tools"><span>Grok</span><span>Gmail</span><span>Claude</span></div>
-    </div>
+    <div class="meta">Personal build<br>Running daily<br>2026</div>
     <div>
       <h3>Autonomous networking agent</h3>
-      <p class="sub">I wanted to run a professional networking campaign at a scale I couldn't manage by hand.</p>
+      <p>I wanted to run a networking campaign at a scale I couldn't manage by hand.</p>
       <ul>
-        <li>An agent that sources contacts, drafts personalized outreach and sends about 50 emails a day. It has booked 30+ calls with people at firms including Goldman Sachs, BlackRock and JPMorgan.</li>
-        <li>Added governance checks after spotting a gap: it checks sent mail and past conversations so it never contacts anyone twice.</li>
-        <li>Grew into a small team of agents (research, outreach, follow-ups and a coordinator), fed by a nightly log of my work.</li>
+        <li>Sources contacts, drafts personalized outreach and sends about 50 emails a day. It has booked 30+ calls with people at firms including Goldman Sachs, BlackRock and JPMorgan.</li>
+        <li>After spotting a gap, I added checks against sent mail and past conversations so it never contacts anyone twice.</li>
       </ul>
     </div>
   </article>
 
   <article class="project">
-    <div class="meta">
-      <div>Public build</div>
-      <div>2026</div>
-      <div class="tools"><span>Python</span><span>CMS public data</span></div>
+    <div class="meta">Public build<br>Machine learning<br>2026</div>
+    <div>
+      <h3>Which NFL plays end in injury, and which players don't return?</h3>
+      <p>An interactive analysis of about 717,000 NFL plays from 2009 to 2025, built to learn applied machine learning on a game I played for five years.</p>
+      <ul>
+        <li>Kickoffs caused concussions at 2.5 to 3 times the rate of other plays; Thursday games, turf and rookie status showed no effect.</li>
+        <li>Pre-registered 25 comparisons with a false-discovery correction, and caught data artifacts along the way, like linemen rarely being named in play text.</li>
+      </ul>
     </div>
+  </article>
+
+  <article class="project">
+    <div class="meta">Public build<br>CMS data<br>2026</div>
     <div>
       <h3>Hospice Watch</h3>
-      <p class="sub">An automated tracker for the US hospice market, built on free CMS data so it can be shown without client data.</p>
-      <ul>
-        <li>Each month it flags new hospices, exits and ownership changes across Medicare-certified providers.</li>
-      </ul>
+      <p>An automated tracker for the US hospice market on free CMS data that flags new hospices, exits and ownership changes each month.</p>
     </div>
   </article>
+</main>
 
-  <article class="project">
-    <div class="meta">
-      <div>Public build</div>
-      <div>2026</div>
-      <div class="tools"><span>Python</span><span>Machine learning</span></div>
-    </div>
-    <div>
-      <h3>Which NFL plays end in injury?</h3>
-      <p class="sub">A data story on play-level injury risk, built to learn applied machine learning on a subject I know from five years of Division I football.</p>
-      <ul>
-        <li>Compares injury rates by play type: special teams against regular plays, pass against run, and by position.</li>
-      </ul>
-    </div>
-  </article>
+<footer><span>Wilson Selzer · New York</span><span>selzerwilson@gmail.com</span></footer>
 
-  <h2>Before that</h2>
-  <p class="earlier">Two FP&amp;A internships at Epiq Global (an OMERS portfolio company), where I met with every business unit to find where AI could replace work and presented the use cases to the C-suite, and ran diligence on AI acquisition targets, one of which Epiq acquired. Five years of Division I football at Cornell.</p>
-
-  <footer>Wilson Selzer · selzerwilson@gmail.com</footer>
-</div>
+<script>
+document.querySelectorAll('.tabs').forEach(tl => {
+  const tabs = [...tl.querySelectorAll('[role=tab]')];
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => { x.setAttribute('aria-selected', x === t); document.getElementById(x.getAttribute('aria-controls')).hidden = x !== t; });
+  }));
+});
+</script>
 </body>
 </html>
